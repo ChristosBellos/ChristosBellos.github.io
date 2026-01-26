@@ -1,5 +1,5 @@
----
+----
 layout: page
 title: Σχετικά Με Εμένα
-permalink: /about/
----
+permalink: /about.md
+----

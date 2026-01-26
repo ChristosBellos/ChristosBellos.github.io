@@ -1,3 +1,5 @@
+---
 layout: page
-title: "ABOUT ME"
-permalink: /about.md
+title: Σχετικά Με Εμένα
+permalink: /about/
+---

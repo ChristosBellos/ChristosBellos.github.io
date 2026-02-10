@@ -298,6 +298,15 @@ footer {
     margin: 0 auto;
 }
 
+.content-wrapper p {
+    margin-bottom: 1.0rem; /* Ρύθμισε το 1.5rem ανάλογα με το πόσο μεγάλο κενό θέλεις */
+    line-height: 1.7;     /* Προαιρετικό: βελτιώνει την απόσταση μεταξύ των γραμμών */
+}
+
+.content-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
 .project-placeholder {
     margin-top: 3rem;
     background: var(--light-gray);
@@ -308,4 +317,15 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--text-muted);
+}
+
+.highlight-text {
+    font-size: 1.25rem;             /* Μεγαλύτερη γραμματοσειρά από το κανονικό κείμενο */
+    font-weight: 600;               /* Έντονη γραφή */
+    color: var(--navy);             /* Χρήση του βασικού σου χρώματος */
+    border-left: 4px solid var(--cyan); /* Μια γραμμή στα αριστερά που ταιριάζει με το design σου */
+    padding-left: 6rem;           /* Απόσταση από τη γραμμή */
+    padding-left: 6rem;           /* Απόσταση από τη γραμμή */
+    margin-top: 2rem;               /* Κενό από την προηγούμενη παράγραφο */
+    font-style: italic;             /* Πλάγια γραφή για περισσότερο ύφος */
 }

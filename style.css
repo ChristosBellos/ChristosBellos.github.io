@@ -335,3 +335,53 @@ footer {
     width: auto;   /* Διατηρεί τις αναλογίες (aspect ratio) για να μην παραμορφωθεί */
     object-fit: cover; /* Αν το ύψος είναι σταθερό, "γεμίζει" το χώρο χωρίς να την ξεχειλώνει */
 }
+
+/* Analysis Grid Layout */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.analysis-card {
+    background: var(--light-gray); /* Ίδιο με το index.html */
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 4px solid var(--sky-blue); /* Μπλε γραμμή στο πάνω μέρος */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.analysis-card h3 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.analysis-card ul {
+    list-style: none; /* Αφαιρούμε τις κλασικές βούλες */
+    padding-left: 0;
+}
+
+.analysis-card li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Custom bullet points */
+.analysis-card li::before {
+    content: "•";
+    color: var(--sky-blue);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.analysis-card strong {
+    color: var(--navy);
+}

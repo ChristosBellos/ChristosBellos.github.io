@@ -385,3 +385,66 @@ footer {
 .analysis-card strong {
     color: var(--navy);
 }
+
+/* Container styling */
+.pace-comparison {
+    display: flex;
+    gap: 1.5rem; /* Μειώνουμε λίγο το κενό για να χωράνε καλύτερα */
+    margin: 2rem 0;
+    flex-wrap: nowrap; /* Απαγορεύει την αλλαγή γραμμής */
+    width: 100%;
+}
+
+.pace-card {
+    flex: 1; /* Δίνει ίσο πλάτος και στα 3 κουτιά */
+    min-width: 0; /* Επιτρέπει στα cards να συρρικνωθούν αν χρειαστεί */
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Προσθήκη χρώματος για την τρίτη κάρτα */
+.pace-card.euro .label {
+    color: #3498db; /* Ένα μπλε για να ξεχωρίζει από το πράσινο/κόκκινο */
+}
+
+/* Mobile Responsive: Αν η οθόνη είναι μικρή, τότε μόνο να αλλάζουν γραμμή */
+@media (max-width: 900px) {
+    .pace-comparison {
+        flex-wrap: wrap;
+    }
+    .pace-card {
+        flex: 1 1 250px; /* Επιστρέφει σε stacked διάταξη σε κινητά */
+    }
+}
+
+.pace-card.win .label { color: #2ecc71; } /* Πράσινο για νίκες */
+.pace-card.loss .label { color: #e74c3c; } /* Κόκκινο για ήττες */
+
+.time-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+/* Progress Bar Logic */
+.pace-bar-container {
+    background: #ddd;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.pace-bar {
+    height: 100%;
+    background: var(--sky-blue);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}

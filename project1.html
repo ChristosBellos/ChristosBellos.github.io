@@ -125,6 +125,372 @@
                 It is easily observed that Olympiakos' average time before taking a shot, does not differenciate
                 between wins and losses.
             </p>
+            <p>
+                As it is said before, team's offense is separated into three parts. The first 5 seconds refer to fastbreaks / 
+                transition offenses, the seconds in range 6-19 belong to set games and the last 5 seconds are about late clock situations.
+                After calculating each offense, in relation to the total amount of offenses during those games, the results are:
+                <section class="distribution-analysis">
+                    <h3 class="section-subtitle">Offensive Time Zone Distribution</h3>
+                    
+                    <div class="dist-container">
+                        <div class="dist-group">
+                            <h4>Wins</h4>
+                            <div class="stacked-bar">
+                            <div class="segment fastbreak" style="width: 7.26%" title="Fastbreak: 7.26%">7.3%</div>
+                            <div class="segment setgame" style="width: 73.39%" title="Set Game: 73.39%">73.4%</div>
+                            <div class="segment lateclock" style="width: 19.35%" title="Late Clock: 19.35%">19.3%</div>
+                            </div>
+                        </div>
+
+                        <div class="dist-group">
+                            <h4>Losses</h4>
+                            <div class="stacked-bar">
+                            <div class="segment fastbreak" style="width: 4.14%" title="Fastbreak: 4.14%">4.1%</div>
+                            <div class="segment setgame" style="width: 74.48%" title="Set Game: 74.48%">74.5%</div>
+                            <div class="segment lateclock" style="width: 21.38%" title="Late Clock: 21.38%">21.4%</div>
+                            </div>
+                        </div>
+
+                        <div class="dist-legend">
+                            <span class="legend-item"><i class="dot fb"></i> Fastbreak / Transition</span>
+                            <span class="legend-item"><i class="dot sg"></i> Set Game</span>
+                            <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
+                        </div>
+                    </div>
+                </section>
+                At first glance, there is not any great difference in the distribution of these categories, between the two results. But as 
+                we will see later, this 3% difference in fastbreaks between wins and losses plays a crucial part in team's game result.
+            </p>
+
+            <p>
+                After recording each shot that was taken during the game, and distinct each shot for each time zone, an analysis has been made
+                in which we calculated the percentage of total missed shots in each particular time zone, regarding the total amount of shots
+                taken in that time period.
+                <section class="shots-analysis">
+                <h3 class="section-subtitle">Missed Shots Percentage per Time Zone</h3>
+                
+                <div class="table-container">
+                    <table class="analysis-table">
+                        <thead>
+                        <tr>
+                            <th>Time Zone</th>
+                            <th>Result</th>
+                            <th>Missed %</th>
+                            <th>Missed Shots Rate</th>
+                            <th>Shots Ratio (Missed/Taken)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                        <tr>
+                            <td></td>
+                            <td class="win-label">Wins</td>
+                            <td>11.11%</td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 11.11%"></div></div></td>
+                            <td>0.56 / 5.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="loss-label">Losses</td>
+                            <td>16.67%</td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 16.67%"></div></div></td>
+                            <td>0.50 / 3.00</td>
+                        </tr>
+
+                        <tr class="group-header"><td colspan="5">Set Game</td></tr>
+                        <tr>
+                            <td></td>
+                            <td class="win-label">Wins</td>
+                            <td>38.90%</td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 38.90%"></div></div></td>
+                            <td>19.67 / 50.56</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="loss-label">Losses</td>
+                            <td>50.00%</td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 50.00%"></div></div></td>
+                            <td>27.00 / 54.00</td>
+                        </tr>
+
+                        <tr class="group-header"><td colspan="5">Late Clock</td></tr>
+                        <tr>
+                            <td></td>
+                            <td class="win-label">Wins</td>
+                            <td>43.33%</td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 43.33%"></div></div></td>
+                            <td>5.78 / 13.33</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="loss-label">Losses</td>
+                            <td>51.61%</td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 51.61%"></div></div></td>
+                            <td>8.00 / 15.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                </section>
+            </p>
+
+            <p>
+                Except from missed shots, a calculation was made on contested shots of each time zone and the percentage of them
+                in relation to the total amount of shots taken, in that time zone.
+                <section class="shots-analysis">
+                    <h3 class="section-title">Contested Shots Analysis</h3>
+                    
+                    <div class="table-container">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Time Zone</th>
+                                    <th>Result</th>
+                                    <th>Contested %</th>
+                                    <th>Pressure Bar</th>
+                                    <th>Shots Ratio (Contested/Taken)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>15.56%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 15.56%"></div></div></td>
+                                    <td>0.78 / 5.00</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>50.00%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 50.00%"></div></div></td>
+                                    <td>1.50 / 3.00</td>
+                                </tr>
+
+                                <tr class="group-header"><td colspan="5">Set Game</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>43.30%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 43.30%"></div></div></td>
+                                    <td>21.89 / 50.56</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>52.78%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 52.78%"></div></div></td>
+                                    <td>28.50 / 54.00</td>
+                                </tr>
+
+                                <tr class="group-header"><td colspan="5">Late Clock</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>66.67%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 66.67%"></div></div></td>
+                                    <td>8.89 / 13.33</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>35.48%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 35.48%"></div></div></td>
+                                    <td>5.50 / 15.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </p>
+
+            <p>
+                Now instead of taking only the contested shots into consideration, we include also the semi-contested shots. As we 
+                will easily observe, the total percentage grows rapidly.
+                <section class="shots-analysis">
+                    <h3 class="section-title">Contested & Semi-Contested Analysis</h3>
+    
+                    <div class="table-container">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Time Zone</th>
+                                    <th>Result</th>
+                                    <th>Contested/Semi %</th>
+                                    <th>Pressure Bar</th>
+                                    <th>Shots Ratio (Pressure/Total)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>28.89%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 28.89%"></div></div></td>
+                                    <td>1.44 / 5.00</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>83.33%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 83.33%"></div></div></td>
+                                    <td>2.50 / 3.00</td>
+                                </tr>
+
+                                <tr class="group-header"><td colspan="5">Set Game</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>64.84%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 64.84%"></div></div></td>
+                                    <td>32.78 / 50.56</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>73.15%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 73.15%"></div></div></td>
+                                    <td>39.50 / 54.00</td>
+                                </tr>
+
+                                <tr class="group-header"><td colspan="5">Late Clock</td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>77.50%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 77.50%"></div></div></td>
+                                    <td>10.33 / 13.33</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>51.61%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 51.61%"></div></div></td>
+                                    <td>16.00 / 31.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </p>
+
+            <p>
+                <section class="shot-creation-analysis">
+                    <h2 class="section-title">Shot Creation Methods</h2>
+        
+                    <div class="creation-grid">
+                        <div class="creation-col">
+                            <h3 class="win-label text-center">Wins (Total Distribution)</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Side-to-Side Pass</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 100%">157</div> </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Player Isolation</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 61%">96</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Pick 'n Roll</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 58%">92</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Inside-Out Pass</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 53%">80</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Offensive Rebound/2nd Chances</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 38%">64</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Inside-the-Paint Pass</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 30%">52</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Fastbreak/Transition</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 27%">44</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Cut To The Basket</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 15%">23</div>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+
+                        <div class="creation-col">
+                            <h3 class="loss-label text-center">Losses (Total Distribution)</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Pick 'n Roll</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 100%">29</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Player Isolation</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 93%">27</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Side-to-Side Pass</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 75%">22</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Offensive Rebound/2nd Chances</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 40%">12</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Inside-Out Pass</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 38%">11</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Inside-the-Paint Pass</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 36%">10</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Cut To The Basket</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 32%">8</div>
+                                </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Fastbreak/Transition</span>
+                                <div class="chart-bar-bg">
+                                    <div class="chart-bar loss" style="width: 20%">4</div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </p>
 
             <div class="project-placeholder">
             </div>

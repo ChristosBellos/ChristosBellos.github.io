@@ -448,3 +448,190 @@ footer {
     border-radius: 4px;
     transition: width 1s ease-in-out;
 }
+
+.distribution-analysis {
+    margin: 3rem 0;
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.dist-container {
+    margin: 2rem 0;
+}
+
+.dist-group {
+    margin-bottom: 2rem;
+}
+
+.dist-group h4 {
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+}
+
+/* Stacked Bar Styling */
+.stacked-bar {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.segment:hover {
+    filter: brightness(1.1);
+    cursor: default;
+}
+
+/* Χρώματα Ζωνών */
+.fastbreak { background-color: #2ecc71; } /* Πράσινο - Γρήγορο/Transition */
+.setgame { background-color: var(--sky-blue); } /* Μπλε - Οργανωμένο παιχνίδι */
+.lateclock { background-color: #e67e22; } /* Πορτοκαλί - Πίεση χρόνου */
+
+/* Legend Styling */
+.dist-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-main);
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.fb { background-color: #2ecc71; }
+.sg { background-color: var(--sky-blue); }
+.lc { background-color: #e67e22; }
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    font-size: 0.95rem;
+}
+
+.analysis-table th, .analysis-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.analysis-table th {
+    background: var(--navy);
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.group-header {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: var(--navy);
+    border-left: 4px solid var(--sky-blue);
+}
+
+.win-label { color: #2ecc71; font-weight: bold; }
+.loss-label { color: #e74c3c; font-weight: bold; }
+
+/* Styling for the Efficiency Bar */
+.bar-bg {
+    background: #eee;
+    width: 100%;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.bar-fill.win { background: #2ecc71; }
+.bar-fill.loss { background: #e74c3c; }
+
+.description-text {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.creation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.chart-wrapper {
+    margin-top: 1.5rem;
+}
+
+.bar-group {
+    margin-bottom: 1.2rem;
+}
+
+.category-name {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.chart-bar-bg {
+    background: #f0f2f5;
+    height: 24px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.chart-bar {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: width 0.8s ease-out;
+}
+
+.chart-bar.win { background: var(--sky-blue); }
+.chart-bar.loss { background: #e74c3c; }
+
+@media (max-width: 768px) {
+    .creation-grid { grid-template-columns: 1fr; }
+}

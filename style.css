@@ -635,3 +635,137 @@ footer {
 @media (max-width: 768px) {
     .creation-grid { grid-template-columns: 1fr; }
 }
+
+/* Container για το γράφημα με Glass Effect */
+.chart-glass-card {
+    background: rgba(17, 34, 64, 0.6); /* Royal Blue με διαφάνεια */
+    backdrop-filter: blur(10px); /* Το εφέ θολώματος */
+    border: 1px solid rgba(100, 255, 218, 0.2); /* Απαλό Cyan περίγραμμα */
+    border-radius: 16px;
+    padding: 20px;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Ρυθμίσεις για το Iframe */
+.plotly-iframe {
+    width: 100%;
+    height: 850px; /* Σταθερό μεγάλο ύψος */
+    border: none;
+    border-radius: 8px;
+    display: block;
+    overflow: hidden; /* Εξαφανίζει τις μπάρες κύλισης */
+}
+
+/* Προσαρμογή για tablet/mobile ώστε να μην βγαίνει εκτός οθόνης */
+@media (max-width: 1024px) {
+    .plotly-iframe {
+        height: 700px;
+    }
+}
+
+.responsive-chart-img {
+    width: 100%;       /* Πιάνει όλο το πλάτος του container */
+    height: auto;      /* Το ύψος υπολογίζεται αυτόματα για να μην παραμορφώνεται */
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.chart-glass-card {
+    padding: 10px;    /* Μειώνουμε λίγο το padding για να αναπνέει η εικόνα */
+    background: rgba(17, 34, 64, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.insight-badge {
+    background: var(--cyan);
+    color: var(--navy);
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.chart-insight-box p {
+    color: var(--white);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .plotly-iframe {
+        height: 450px; /* Μικραίνουμε το ύψος σε κινητά */
+    }
+}
+
+/* Glass Container για τον πίνακα */
+.table-glass-container {
+    background: rgba(17, 34, 64, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 1px; /* Για να φαίνεται το border-gradient αν προστεθεί */
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    margin: 2rem 0;
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--white);
+}
+
+.metrics-table th {
+    background: rgba(10, 25, 47, 0.8);
+    color: var(--cyan);
+    text-align: left;
+    padding: 15px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metrics-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Badges για το Efficiency */
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.status-badge.high {
+    background: rgba(46, 204, 113, 0.2);
+    color: #27ac00;
+    border: 1px solid #2ecc71;
+}
+
+.status-badge.low {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.win-label { font-weight: bold; color: #2ecc71; }
+.loss-label { font-weight: bold; color: #e74c3c; }
+
+.win-label { 
+    font-weight: bold; 
+    /* Χρήση ενός πιο σκούρου και πλούσιου πράσινου (Emerald/Forest) */
+    color: #27ac00; 
+    
+    /* Προαιρετικό: Μικρή αύξηση στο spacing για να "αναπνέει" το περίγραμμα */
+    letter-spacing: 0.5px;
+}
+

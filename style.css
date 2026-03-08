@@ -264,7 +264,7 @@ footer {
 .project-hero {
     /* Συνδυασμός gradient overlay και εικόνας σε μία δήλωση background */
     background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
-                url('https://kingsport.gr/wp-content/uploads/2025/06/IMG_6903.webp') center/cover;
+                url('oly.htm') center/cover;
     
     height: 60vh; /* Δίνει ύψος παρόμοιο με την εικόνα σας */
     display: flex;

@@ -1386,6 +1386,235 @@
                 </section>
             </p>
 
+            <p>
+                <section class="shots-analysis">
+                    <h2 class="section-title">Screen Defense Strategies</h2>
+                    <p>
+                        A vital component of Olympiacos' defensive identity is how they navigate opponent screens. This data tracks the frequency of different defensive schemes (coded 1-5) and their prevalence based on the game outcome.
+                    </p>
+
+                    <div class="analysis-grid">
+                        <div class="analysis-card" style="border-top-color: var(--sky-blue);">
+                            <h3 class="win-label"><span class="icon">🛡️</span> Defense in Wins</h3>
+                            <p class="description-text">Total Screen Actions: 340</p>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Flat/Show & Recover (Primary)</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 37.94%">37.94%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Switch</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 32.65%">32.65%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Deep Cover</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 14.41%">14.41%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Hedge Out</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 8.53%">8.53%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Over</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 6.47%">6.47%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-card" style="border-top-color: #e74c3c;">
+                            <h3 class="loss-label"><span class="icon">⚠️</span> Defense in Losses</h3>
+                            <p class="description-text">Total Screen Actions: 72</p>
+                            <div class="chart-wrapper">
+                               <div class="bar-group">
+                                   <span class="category-name">Switch (Primary)</span>
+                                   <div class="chart-bar-bg">
+                                       <div class="chart-bar loss" style="width: 34.72%">34.72%</div>
+                                   </div>
+                               </div>
+                               <div class="bar-group">
+                                   <span class="category-name">Flat/Show & Recover</span>
+                                   <div class="chart-bar-bg">
+                                       <div class="chart-bar loss" style="width: 31.94%">31.94%</div>
+                                   </div>
+                               </div>
+                               <div class="bar-group">
+                                   <span class="category-name">Over</span>
+                                   <div class="chart-bar-bg">
+                                       <div class="chart-bar loss" style="width: 11.11%">11.11%</div>
+                                   </div>
+                               </div>
+                               <div class="bar-group">
+                                   <span class="category-name">Deep Cover</span>
+                                   <div class="chart-bar-bg">
+                                       <div class="chart-bar loss" style="width: 11.11%">11.11%</div>
+                                   </div>
+                               </div>
+                               <div class="bar-group">
+                                   <span class="category-name">Hedge Out</span>
+                                   <div class="chart-bar-bg">
+                                       <div class="chart-bar loss" style="width: 9.72%">9.72%</div>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container" style="margin-top: 2rem;">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Scheme Code</th>
+                                    <th>Count (Wins)</th>
+                                    <th>Frequency (Wins)</th>
+                                    <th>Count (Losses)</th>
+                                    <th>Frequency (Losses)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Flat/Show & Recover</strong></td>
+                                    <td>129</td>
+                                    <td class="win-label">37.94%</td>
+                                    <td>23</td>
+                                    <td>31.94%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Switch</strong></td>
+                                    <td>111</td>
+                                    <td>32.65%</td>
+                                    <td>25</td>
+                                    <td class="loss-label">34.72%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Deep Cover</strong></td>
+                                    <td>49</td>
+                                    <td>14.41%</td>
+                                    <td>8</td>
+                                    <td>11.11%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hedge Out</strong></td>
+                                    <td>29</td>
+                                    <td>8.53%</td>
+                                    <td>7</td>
+                                    <td>9.72%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Over</strong></td>
+                                    <td>22</td>
+                                    <td>6.47%</td>
+                                    <td>8</td>
+                                    <td>11.11%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <p style="font-size: 0.85rem; color: #8892b0; margin-top: 1.5rem; font-style: italic;">
+                        * Σημείωση: Παρατηρείται αλλαγή στην κύρια αμυντική προσέγγιση ανάλογα με το αποτέλεσμα. Στις νίκες κυριαρχεί το Scheme 4 (37.94%), ενώ στις ήττες το Scheme 1 γίνεται η συχνότερη επιλογή (34.72%).
+                    </p>
+                </section>
+            </p>
+
+            <p>
+                <section class="shots-analysis">
+                    <h2 class="section-title">Opponent Shooting Analysis (After Screen)</h2>
+                    <p>
+                        Understanding defensive efficiency requires looking at the shots allowed after an opponent's screen action. 
+                        Out of <strong>244 total allowed shots</strong> in this period, <strong>106 (43.44%)</strong> were successfully made by the opposition.
+                    </p>
+
+                    <div class="analysis-grid">
+                        <div class="analysis-card" style="border-top-color: #2ecc71;">
+                            <h3 class="win-label">Opponent Accuracy in Wins</h3>
+                            <div class="time-value">40.61%</div>
+                            <p class="description-text">80 Made / 197 Taken</p>
+                            <div class="pace-bar-container">
+                                <div class="pace-bar" style="width: 40.61%; background-color: #2ecc71;"></div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-card" style="border-top-color: #e74c3c;">
+                            <h3 class="loss-label">Opponent Accuracy in Losses</h3>
+                            <div class="time-value">55.32%</div>
+                            <p class="description-text">26 Made / 47 Taken</p>
+                            <div class="pace-bar-container">
+                                <div class="pace-bar" style="width: 55.32%; background-color: #e74c3c;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="section-subtitle" style="margin-top: 2rem;">Contest Levels on Made Shots</h3>
+                    <div class="dist-container">
+                        <div class="dist-group">
+                            <h4>Made Shots in Wins (80 Total)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment lateclock" style="width: 31.25%" title="Contested: 31.25%">31.3%</div>
+                                <div class="segment setgame" style="width: 22.50%" title="Slightly Contested: 22.50%">22.5%</div>
+                                <div class="segment fastbreak" style="width: 45.00%" title="Uncontested: 45.00%">45.0%</div>
+                            </div>
+                        </div>
+
+                        <div class="dist-group">
+                            <h4>Made Shots in Losses (26 Total)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment lateclock" style="width: 26.92%" title="Contested: 26.92%">26.9%</div>
+                                <div class="segment setgame" style="width: 23.08%" title="Slightly Contested: 23.08%">23.1%</div>
+                                <div class="segment fastbreak" style="width: 50.00%" title="Uncontested: 50.00%">50.0%</div>
+                            </div>
+                        </div>
+        
+                        <div class="dist-legend">
+                            <span class="legend-item"><i class="dot lc"></i> Contested</span>
+                            <span class="legend-item"><i class="dot sg"></i> Slightly Contested</span>
+                            <span class="legend-item"><i class="dot fb"></i> Uncontested</span>
+                        </div>
+                    </div>
+
+                    <div class="table-container" style="margin-top: 2rem;">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Result Type</th>
+                                    <th>Percentage</th>
+                                    <th>Visual Pressure Bar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-header"><td colspan="4">Total Allowed Uncontested Shots (Made & Missed)</td></tr>
+                                <tr>
+                                    <td>Uncontested / Total Allowed</td>
+                                    <td class="win-label">Wins</td>
+                                    <td>25.89%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 25.89%"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>38.30%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 38.30%"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p style="font-size: 0.85rem; color: #8892b0; margin-top: 1.5rem; font-style: italic;">
+                        * Σημείωση: Στις ήττες, το ποσοστό των ελεύθερων (uncontested) σουτ που επιτράπηκαν αυξάνεται σημαντικά στο 38.30%, οδηγώντας σε αύξηση της ευστοχίας των αντιπάλων στο 55.32%.
+                    </p>
+                </section>
+            </p>
+
             <div class="project-placeholder">
             </div>
         </div>

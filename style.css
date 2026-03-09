@@ -101,6 +101,17 @@ section {
     padding-left: 1rem;
 }
 
+.section-subtitle {
+    font-size: 1.6rem;               /* Μεγαλύτερο μέγεθος για έμφαση */
+    color: var(--royal-blue);        /* Σκούρο αλλά πιο "μαλακό" από το Navy */
+    font-weight: 700;                /* Έντονη γραφή */
+    margin: 2.5rem 0 1.5rem 0;       /* Περισσότερο κενό από πάνω για "ανάσα" */
+    letter-spacing: -0.02em;         /* Πιο σφιχτό spacing για μοντέρνα εμφάνιση */
+    border-bottom: 2px solid #e0e6ed; /* Διακριτική γραμμή διαχωρισμού */
+    padding-bottom: 0.5rem;          /* Απόσταση κειμένου από τη γραμμή */
+    display: block;                  /* Εξασφαλίζει ότι η γραμμή πιάνει όλο το πλάτος */
+}
+
 /* --- Project Grid --- */
 .project-grid {
     display: grid;
@@ -527,6 +538,13 @@ footer {
 .sg { background-color: var(--sky-blue); }
 .lc { background-color: #e67e22; }
 
+.shots-analysis {
+    max-width: 800px; /* Το ίδιο πλάτος με το content-wrapper */
+    margin: 2rem 0;   /* Πάνω-κάτω περιθώριο, 0 στα πλάγια για να μένει αριστερά */
+    text-align: left; /* Διασφαλίζει την αριστερή στοίχιση */
+    padding: 0
+}
+
 .table-container {
     overflow-x: auto;
     margin-top: 2rem;
@@ -586,6 +604,14 @@ footer {
     margin-bottom: 1rem;
 }
 
+.shot-creation-analysis {
+    max-width: 800px;
+    margin-left: 0;   /* Κολλάει αριστερά */
+    margin-right: auto;
+    width: 100%;
+    justify-items: start;
+}
+
 .creation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -595,6 +621,7 @@ footer {
 
 .chart-wrapper {
     margin-top: 1.5rem;
+    width: 100%
 }
 
 .bar-group {

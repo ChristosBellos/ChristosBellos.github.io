@@ -398,6 +398,81 @@
             </p>
 
             <p>
+                <section class="shots-analysis">
+                    <h3 class="section-subtitle">Analysis of Uncontested Shots</h3>
+                    <p>
+                        A critical metric in Olympiacos' performance is the ability to create and convert uncontested shots. 
+                        Across all games, <strong>51.19%</strong> of the total made shots were uncontested.
+                    </p>
+
+                    <div class="table-container">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Result Type</th>
+                                    <th>Percentage</th>
+                                    <th>Visual Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-header"><td colspan="4">Total Made Uncontested Shots</td></tr>
+                                <tr>
+                                    <td>Uncontested vs Total Made</td>
+                                    <td class="win-label">Total Games</td>
+                                    <td>51.19%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 51.19%"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="win-label">Wins</td>
+                                    <td>52.20%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 52.20%"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="loss-label">Losses</td>
+                                    <td>45.76%</td>
+                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 45.76%"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="section-subtitle" style="margin-top: 2rem;">Uncontested Shots Distribution by Time Zone</h3>
+                    <div class="dist-container">
+                        <div class="dist-group">
+                        <h4>Wins (Breakdown)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment fastbreak" style="width: 16.87%" title="Fastbreak: 16.87%">16.9%</div>
+                                <div class="segment setgame" style="width: 68.67%" title="Set Game: 68.67%">68.7%</div>
+                                <div class="segment lateclock" style="width: 14.46%" title="Late Clock: 14.46%">14.5%</div>
+                            </div>
+                        </div>
+
+                        <div class="dist-group">
+                            <h4>Losses (Breakdown)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment fastbreak" style="width: 3.70%" title="Fastbreak: 3.70%">3.7%</div>
+                                <div class="segment setgame" style="width: 66.67%" title="Set Game: 66.67%">66.7%</div>
+                                <div class="segment lateclock" style="width: 29.63%" title="Late Clock: 29.63%">29.6%</div>
+                            </div>
+                        </div>
+        
+                        <div class="dist-legend">
+                            <span class="legend-item"><i class="dot fb"></i> Fastbreak / Transition</span>
+                            <span class="legend-item"><i class="dot sg"></i> Set Game</span>
+                            <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;">
+                        <strong>Key Insight:</strong> In losses, the percentage of uncontested shots coming from fastbreak situations drops dramatically from <strong>16.87%</strong> to just <strong>3.70%</strong>, while late-clock pressure shots double in frequency (from 14.46% to 29.63%).
+                    </p>
+                </section>
+            </p>
+
+            <p>
                 <section class="shot-creation-analysis">
                     <h3 class="section-subtitle">Shot Creation Methods</h3>
         
@@ -511,6 +586,21 @@
                         </div>
                     </div>
                 </section>
+
+                <p>
+                    Side-to-side passes is the the main category of the team's shot creation in games won, either with continuous ball
+                    movement (which is something Olympiakos is known for), either with hand-offs, or with passes and immediate drives from
+                    the players.
+                </p>
+                <p>
+                    Player isolations and pick 'n rolls are the second most common way of creating a shot and up next are the inside-out passes,
+                    wether they are from guards who kick-out the ball, or from big men who get double teamed and find their teammate at the 3-point
+                    line.
+                </p>
+                <p>
+                    There is a different story in games lost. The main shot creation method of the team are pick 'n rolls and up next we get side-to-side
+                    passes and 2nd chances, either from offensive rebounds or from extra possesions won.
+                </p>
             </p>
 
             <p>
@@ -621,15 +711,27 @@
                         </div>
                     </div>
                 </section>
+
+                <p>
+                    Now, the uncontested shots that came up tell a whole different story. In games won the inside-out passes method create
+                    the most amount of uncontested shots (over than 50%) and the side-to-side passes with the pick 'n rolls are up next in
+                    the hierarchy.
+                </p>
+                <p>
+                    In games lost pick 'n rolls and cut to the basket methods are the ones that create the most amount of uncontested shots.
+                </p>
             </p>
 
             <p>
                 <section class="visual-analysis">
-                    <h3 class="section-subtitle">Shot Creation & Outcome Analysis (Wins)</h3>
-                    <p class="description-text">Interactive representation of team effectiveness depending on shot creation method.</p>
+                    <h3 class="section-subtitle">Shot Creation & Outcome Analysis (Wins/Losses Distinction)</h3>
+                    <p class="description-text">
+                        Interactive representation of team effectiveness depending on shot creation method. Successful shots are considered
+                        the shots made or fouls drawn in these shots. Unsuccessful shots are considered the shots that are missed or blocked.
+                    </p>
     
                     <div class="chart-glass-card">
-                        <img src="C:\Users\xrist\.vscode\ChristosBellos.github.io\Olympiacos Wins.png" alt="Shot Creation Efficiency Analysis" class="responsive-chart-img">
+                        <img src="C:\Users\xrist\.vscode\ChristosBellos.github.io\Olympiakos Wins.png" alt="Shot Creation Efficiency Analysis" class="responsive-chart-img">
     
                         <div class="chart-insight-box">
                             <span class="insight-badge">Static View</span>
@@ -637,14 +739,6 @@
                         </div>
                     </div>
 
-                </section>
-            </p>
-
-            <p>
-                <section class="visual-analysis">
-                    <h3 class="section-subtitle">Shot Creation & Outcome Analysis (Losses)</h3>
-                    <p class="description-text">Interactive representation of team effectiveness depending on shot creation method.</p>
-    
                     <div class="chart-glass-card">
                         <img src="C:\Users\xrist\.vscode\ChristosBellos.github.io\Olympiakos Losses.png" alt="Shot Creation Efficiency Analysis" class="responsive-chart-img">
     
@@ -655,11 +749,19 @@
                     </div>
 
                 </section>
-            </p>
+                <p>
+                    Some interesting differences are easily observed after the distinction between games won and games lost. We have an increased
+                    percentage of shots taken with pick 'n rolls and player isolations, and a decrease in shot creations using side-to-side and inside-out 
+                    passes and fastbreaks.
+                </p>
+                <p>
+                    Right above we just noted out that in games won, the 3 out of the first 4 shot creation categories, that create the most uncontested
+                    shots, are inside-out passes, side-to-side passes and fastbreaks and the percentage of these 3 is decreased in games lost.
+                    And it is easily more understandable if we check the uncontested/semi-contested shot creation charts.
+                </p>
 
-            <p>
                 <section class="visual-analysis">
-                    <h3 class="section-subtitle">Uncontested/Semi-Contested Shot Creation & Outcome Analysis (Wins)</h3>
+                    <h3 class="section-subtitle">Uncontested/Semi-Contested Shot Creation & Outcome Analysis (Wins/Losses Distinction)</h3>
                     <p class="description-text">Interactive representation of team effectiveness depending on uncontested/semi-contested shot creation method.</p>
     
                     <div class="chart-glass-card">
@@ -671,14 +773,6 @@
                         </div>
                     </div>
 
-                </section>
-            </p>
-
-            <p>
-                <section class="visual-analysis">
-                    <h3 class="section-subtitle">Uncontested/Semi-Contested Shot Creation & Outcome Analysis (Losses)</h3>
-                    <p class="description-text">Interactive representation of team effectiveness depending on uncontested/semi-contested shot creation method.</p>
-    
                     <div class="chart-glass-card">
                         <img src="C:\Users\xrist\.vscode\ChristosBellos.github.io\Olympiakos Unc Losses.png" alt="Shot Creation Efficiency Analysis" class="responsive-chart-img">
     
@@ -689,7 +783,232 @@
                     </div>
 
                 </section>
+
             </p>
+
+            <p>
+                <section class="shot-creation-analysis">
+                    <h3 class="section-subtitle">Isolation Performance Analysis</h2>
+                    <p>
+                        A deep dive into individual "Player Isolation" situations. This section tracks how many times each player created a shot for himself in 1-on-1 scenarios and their corresponding success rate (Made or Foul shots).
+                    </p>
+
+                    <div class="creation-grid">
+                        <div class="creation-col">
+                        <h3 class="win-label text-center">Isolation Attempts (Count)</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Dorsey</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 100%">36</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Fournier</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 91.6%">33</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Sasha</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 27.7%">10</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Milutinov</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 25.0%">9</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Ward</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 22.2%">8</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">McKissick</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 16.6%">6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creation-col">
+                            <h3 class="loss-label text-center">Success Percentage (%)</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Dorsey</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 38.89%">38.89%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Fournier</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 45.45%">45.45%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Sasha</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 60.00%">60.00%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Milutinov</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 33.33%">33.33%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Ward</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 75.00%">75.00%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">McKissick</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 66.67%">66.67%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <p>
+                    It is very clear that Dorsey and Fournier are the main players to run iso plays, either during set game, or when
+                    the clock is running down. Both players have a good percentage of made shots during isolation, given the fact that
+                    most shots that are taken during those plays are under pressure.
+                </p>
+            </p>
+
+            <p>
+                <section class="shot-creation-analysis">
+                    <h3 class="section-subtitle">Team Play Involvement & Efficiency</h3>
+                    <p>
+                        This analysis focuses on "Team Plays" where players are involved in structured offensive sets. 
+                        We track the volume of involvement and the success rate (Made or Fouled shots) for each player of interest.
+                    </p>
+
+                    <div class="creation-grid">
+                        <div class="creation-col">
+                            <h3 class="win-label text-center">Total Involvement (Counts)</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Sasha</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 100%">43</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Hall</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 93%">40</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Jones</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 88%">38</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Milutinov</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 74%">32</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Peters</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar win" style="width: 25%">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creation-col">
+                            <h3 class="loss-label text-center">Primary Play Success Rate</h3>
+                            <div class="chart-wrapper">
+                                <div class="bar-group">
+                                    <span class="category-name">Jones (Pick 'n Roll)</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 57.89%">57.89%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Hall (Pick 'n Roll)</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 52.50%">52.50%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Sasha (In-the-Paint Pass)</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 25.58%">25.58%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-group">
+                                    <span class="category-name">Milutinov (Pick 'n Roll)</span>
+                                    <div class="chart-bar-bg">
+                                        <div class="chart-bar loss" style="width: 31.25%">31.25%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container" style="margin-top: 2rem;">
+                        <table class="analysis-table">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Dominant Play Type</th>
+                                    <th>Success Rate</th>
+                                    <th>Secondary Play Type</th>
+                                    <th>Success Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Jones</strong></td>
+                                    <td>Pick 'n Roll (29)</td>
+                                    <td class="win-label">57.89%</td>
+                                    <td>In-the-Paint Pass(9)</td>
+                                    <td>21.05%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hall</strong></td>
+                                    <td>Pick 'n Roll (28)</td>
+                                    <td class="win-label">52.50%</td>
+                                    <td>In-the-Paint Pass(6)</td>
+                                    <td>12.50%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sasha</strong></td>
+                                    <td>Pick 'n Roll' (15)</td>
+                                    <td>13.95%</td>
+                                    <td>In-the-Paint Pass (14)</td>
+                                    <td class="win-label">25.58%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Milutinov</strong></td>
+                                    <td>Pick 'n Roll' (22)</td>
+                                    <td>31.25%</td>
+                                    <td>In-the-Paint Pass (9)</td>
+                                    <td>21.88%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </p>
+
 
             <p>
                 <section class="efficiency-metrics">
@@ -722,81 +1041,6 @@
                         </tbody>
                     </table>
                     </div>
-                </section>
-            </p>
-
-            <p>
-                <section class="shots-analysis">
-                    <h3 class="section-subtitle">Analysis of Uncontested Shots</h3>
-                    <p>
-                        A critical metric in Olympiacos' performance is the ability to create and convert uncontested shots. 
-                        Across all games, <strong>51.19%</strong> of the total made shots were uncontested.
-                    </p>
-
-                    <div class="table-container">
-                        <table class="analysis-table">
-                            <thead>
-                                <tr>
-                                    <th>Metric</th>
-                                    <th>Result Type</th>
-                                    <th>Percentage</th>
-                                    <th>Visual Rate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="group-header"><td colspan="4">Total Made Uncontested Shots</td></tr>
-                                <tr>
-                                    <td>Uncontested vs Total Made</td>
-                                    <td class="win-label">Total Games</td>
-                                    <td>51.19%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 51.19%"></div></div></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="win-label">Wins</td>
-                                    <td>52.20%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 52.20%"></div></div></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="loss-label">Losses</td>
-                                    <td>45.76%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 45.76%"></div></div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3 class="section-subtitle" style="margin-top: 2rem;">Uncontested Shots Distribution by Time Zone</h3>
-                    <div class="dist-container">
-                        <div class="dist-group">
-                        <h4>Wins (Breakdown)</h4>
-                            <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 16.87%" title="Fastbreak: 16.87%">16.9%</div>
-                                <div class="segment setgame" style="width: 68.67%" title="Set Game: 68.67%">68.7%</div>
-                                <div class="segment lateclock" style="width: 14.46%" title="Late Clock: 14.46%">14.5%</div>
-                            </div>
-                        </div>
-
-                        <div class="dist-group">
-                            <h4>Losses (Breakdown)</h4>
-                            <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 3.70%" title="Fastbreak: 3.70%">3.7%</div>
-                                <div class="segment setgame" style="width: 66.67%" title="Set Game: 66.67%">66.7%</div>
-                                <div class="segment lateclock" style="width: 29.63%" title="Late Clock: 29.63%">29.6%</div>
-                            </div>
-                        </div>
-        
-                        <div class="dist-legend">
-                            <span class="legend-item"><i class="dot fb"></i> Fastbreak / Transition</span>
-                            <span class="legend-item"><i class="dot sg"></i> Set Game</span>
-                            <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 1.5rem;">
-                        <strong>Key Insight:</strong> In losses, the percentage of uncontested shots coming from fastbreak situations drops dramatically from <strong>16.87%</strong> to just <strong>3.70%</strong>, while late-clock pressure shots double in frequency (from 14.46% to 29.63%).
-                    </p>
                 </section>
             </p>
 
@@ -992,223 +1236,6 @@
                     <p style="font-size: 0.85rem; color: #8892b0; margin-top: 1.5rem; font-style: italic;">
                         * Σημείωση: Οι απόλυτοι αριθμοί στις ήττες εμφανίζονται χαμηλοί καθώς το δείγμα των αγώνων που κατέληξαν σε ήττα είναι σημαντικά μικρότερο σε σχέση με τις νίκες.
                     </p>
-                </section>
-            </p>
-
-            <p>
-                <section class="shot-creation-analysis">
-                    <h3 class="section-subtitle">Isolation Performance Analysis</h2>
-                    <p>
-                        A deep dive into individual "Player Isolation" situations. This section tracks how many times each player created a shot for himself in 1-on-1 scenarios and their corresponding success rate (Made or Foul shots).
-                    </p>
-
-                    <div class="creation-grid">
-                        <div class="creation-col">
-                        <h3 class="win-label text-center">Isolation Attempts (Count)</h3>
-                            <div class="chart-wrapper">
-                                <div class="bar-group">
-                                    <span class="category-name">Dorsey</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 100%">36</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Fournier</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 91.6%">33</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Sasha</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 27.7%">10</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Milutinov</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 25.0%">9</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Ward</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 22.2%">8</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">McKissick</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 16.6%">6</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="creation-col">
-                            <h3 class="loss-label text-center">Success Percentage (%)</h3>
-                            <div class="chart-wrapper">
-                                <div class="bar-group">
-                                    <span class="category-name">Dorsey</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 38.89%">38.89%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Fournier</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 45.45%">45.45%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Sasha</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 60.00%">60.00%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Milutinov</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 33.33%">33.33%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Ward</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 75.00%">75.00%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">McKissick</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 66.67%">66.67%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </p>
-
-            <p>
-                <section class="shot-creation-analysis">
-                    <h3 class="section-subtitle">Team Play Involvement & Efficiency</h3>
-                    <p>
-                        This analysis focuses on "Team Plays" where players are involved in structured offensive sets. 
-                        We track the volume of involvement and the success rate (Made or Fouled shots) for each player of interest.
-                    </p>
-
-                    <div class="creation-grid">
-                        <div class="creation-col">
-                            <h3 class="win-label text-center">Total Involvement (Counts)</h3>
-                            <div class="chart-wrapper">
-                                <div class="bar-group">
-                                    <span class="category-name">Sasha</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 100%">43</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Hall</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 93%">40</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Jones</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 88%">38</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Milutinov</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 74%">32</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Peters</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar win" style="width: 25%">11</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="creation-col">
-                            <h3 class="loss-label text-center">Primary Play Success Rate</h3>
-                            <div class="chart-wrapper">
-                                <div class="bar-group">
-                                    <span class="category-name">Jones (Pick 'n Roll)</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 57.89%">57.89%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Hall (Pick 'n Roll)</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 52.50%">52.50%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Sasha (In-the-Paint Pass)</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 25.58%">25.58%</div>
-                                    </div>
-                                </div>
-                                <div class="bar-group">
-                                    <span class="category-name">Milutinov (Pick 'n Roll)</span>
-                                    <div class="chart-bar-bg">
-                                        <div class="chart-bar loss" style="width: 31.25%">31.25%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 2rem;">
-                        <table class="analysis-table">
-                            <thead>
-                                <tr>
-                                    <th>Player</th>
-                                    <th>Dominant Play Type</th>
-                                    <th>Success Rate</th>
-                                    <th>Secondary Play Type</th>
-                                    <th>Success Rate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Jones</strong></td>
-                                    <td>Pick 'n Roll (29)</td>
-                                    <td class="win-label">57.89%</td>
-                                    <td>In-the-Paint Pass(9)</td>
-                                    <td>21.05%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Hall</strong></td>
-                                    <td>Pick 'n Roll (28)</td>
-                                    <td class="win-label">52.50%</td>
-                                    <td>In-the-Paint Pass(6)</td>
-                                    <td>12.50%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Sasha</strong></td>
-                                    <td>Pick 'n Roll' (15)</td>
-                                    <td>13.95%</td>
-                                    <td>In-the-Paint Pass (14)</td>
-                                    <td class="win-label">25.58%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Milutinov</strong></td>
-                                    <td>Pick 'n Roll' (22)</td>
-                                    <td>31.25%</td>
-                                    <td>In-the-Paint Pass (9)</td>
-                                    <td>21.88%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </section>
             </p>
 

@@ -602,21 +602,33 @@ footer {
     color: var(--text-muted);
     font-style: italic;
     margin-bottom: 1rem;
+    max-width: 800px;
+    width: 100%;
+    justify-content: left;
 }
 
 .shot-creation-analysis {
     max-width: 800px;
-    margin-left: 0;   /* Κολλάει αριστερά */
-    margin-right: auto;
+    margin: 0 auto;   /* Κολλάει αριστερά */
     width: 100%;
     justify-items: start;
+    text-align: left;
+    padding-left:0;
+    padding-right:0;
+    /* ΑΥΤΟ ΜΕΙΩΝΕΙ ΤΟ ΚΕΝΟ */
+    padding-top: 1rem; 
+    padding-bottom: 2rem;
 }
 
 .creation-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 100%;
+    justify-content: center;
+    padding-left:0;
+    padding-right:0;
 }
 
 .chart-wrapper {
@@ -663,6 +675,23 @@ footer {
     .creation-grid { grid-template-columns: 1fr; }
 }
 
+.visual-analysis {
+    max-width: 800px; /* Ή το πλάτος που έχετε ορίσει στο content-wrapper */
+    margin: 0;   /* Κεντράρει το section στην οθόνη */
+    width: 100%;
+    text-align: left; /* Στοιχίζει αριστερά τον τίτλο h3 και την παράγραφο p */
+    justify-content: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.visual-analysis h3.section-subtitle {
+    text-align: left !important;
+    justify-content: left;
+    max-width: 800;
+    margin-left: 0;
+}
+
 /* Container για το γράφημα με Glass Effect */
 .chart-glass-card {
     background: rgba(17, 34, 64, 0.6); /* Royal Blue με διαφάνεια */
@@ -670,9 +699,17 @@ footer {
     border: 1px solid rgba(100, 255, 218, 0.2); /* Απαλό Cyan περίγραμμα */
     border-radius: 16px;
     padding: 20px;
-    margin: 2rem 0;
+    margin: 2rem auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    max-width: 100%;
+    display: block;
+}
+
+.chart-glass-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Ρυθμίσεις για το Iframe */

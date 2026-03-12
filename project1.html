@@ -59,7 +59,7 @@
                     <p>Detailed tracking of scoring efficiency and shot creation:</p>
                     <ul>
                         <li><strong>Offense Second:</strong> Seconds taken to execute the offense.</li>
-                        <li><strong>Time Zone:</strong> The specific "Time Zone" of each shot attempt.</li>
+                        <li><strong>Time Zone:</strong> The specific "Time Zone" of each shot attempt (3 different zones).</li>
                         <li><strong>C/U:</strong> Contested, slightly contested, or uncontested attempts.</li>
                         <li><strong>2p/3p:</strong> 2-pointers vs. 3-pointers.</li>
                         <li><strong>Made/Missed: Shooting results (Made/Missed/Foul).</strong></li>
@@ -93,8 +93,8 @@
                 some interesting stats were collected, that deserve some notice.
             </p>
             <p>
-                Olympiakos' average time for each game, before a shot was taken, was approximately 12.85 seconds. A discrimination
-                between team's wins and losses is done.
+                Olympiakos' average time for each game, before a shot was taken, was approximately 12.85 seconds. Specifically, a 
+                discrimination between the team's wins and losses is appplied.
                 <div class="analysis-visual">
                     <h3 class="section-subtitle">Average Possession Length: Wins vs Losses</h3>
                     <div class="pace-comparison">
@@ -126,9 +126,11 @@
                 between wins and losses.
             </p>
             <p>
-                As it is said before, team's offense is separated into three parts. The first 5 seconds refer to fastbreaks / 
-                transition offenses, the seconds in range 6-19 belong to set games and the last 5 seconds are about late clock situations.
-                After calculating each offense, in relation to the total amount of offenses during those games, the results are:
+                Team's offense is separated into three parts. The first 5 seconds refer to <strong>fastbreaks / 
+                transition</strong> offenses, the seconds in range 6-19 belong to <strong>set games</strong>
+                and the last 5 seconds are about <strong>late clock</strong> situations.
+                After counting each offense the team executed, the <strong>percentage of each time zone in relation to the total
+                amount of offenses</strong> was calculated.
                 <section class="distribution-analysis">
                     <h3 class="section-subtitle">Offensive Time Zone Distribution</h3>
                     
@@ -158,17 +160,17 @@
                         </div>
                     </div>
                 </section>
-                At first glance, there is not any great difference in the distribution of these categories, between the two results. But as 
-                we will see later, this 3% difference in fastbreaks between wins and losses plays a crucial part in team's game result.
+                At first glance, there is not any great difference between each categories' distribution. But as 
+                we will see later, this 3% difference in fastbreaks between wins and losses plays a crucial part in 
+                game.
             </p>
 
             <p>
-                After recording each shot that was taken during the game, and distinct each shot for each time zone, an analysis has been made
-                in which we calculated the percentage of total missed shots in each particular time zone, regarding the total amount of shots
-                taken in that time period.
                 <section class="shots-analysis">
                 <h3 class="section-subtitle">Missed Shots Percentage per Time Zone</h3>
                 
+                Continuing the per-time-zone analysis, we calculated <strong>the percentage of total missed shots in each particular time zone regarding 
+                to the total amount of shots taken</strong> in that time period.
                 <div class="table-container">
                     <table class="analysis-table">
                         <thead>
@@ -181,7 +183,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                        <tr class="group-header"><td colspan="5">Fastbreak / <br>Transition</td></tr>
                         <tr>
                             <td></td>
                             <td class="win-label">Wins</td>
@@ -238,15 +240,15 @@
                     team's losses than the one in team's wins.
                 </p>
                 <p>
-                    In this case, during set game and late clock situations the team takes more shots in lost games and the missed rate is higher.
+                    In this case, during set game and late clock situations <strong>the team takes more shots in lost games and the missed shots rate is higher</strong>.
                 </p>
             </p>
 
             <p>
-                Except from missed shots, a calculation was made on contested shots of each time zone and the percentage of them
-                in relation to the total amount of shots taken, in that time zone.
                 <section class="shots-analysis">
                     <h3 class="section-subtitle">Contested Shots Analysis</h3>
+                    Added to the previous analysis, instead of calculating the missed shots rate per time zone, we 're going to calculate <strong>the contested shot rate per
+                    timezone</strong> (total amount of contested shots taken in relation to total amount of shots taken in that time period).
                     
                     <div class="table-container">
                         <table class="analysis-table">
@@ -260,7 +262,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                                <tr class="group-header"><td colspan="5">Fastbreak / <br>Transition</td></tr>
                                 <tr>
                                     <td></td>
                                     <td class="win-label">Wins</td>
@@ -313,15 +315,14 @@
                 </section>
 
                 <p>
-                    Fastbreak contested shots won't be taken into consideration, because the sample of fastbreak offenses in games lost is less than
-                    the one in games won. 
-                    It is pretty interesting that during late clock situations, the rate of contested shots compared to shots taken during that time zone
-                    is less in games lost, than games won. 
+                    In games lost the team ran a total of 6 fastbreak offenses (3 per game lost), in which half of them were contested by the opposing team.
+                    Although the constested shot rate is higher in set game situations, the same rate in late clock situations is less in lost games, which states
+                    that Olympiakos has a better opportunity in shooting with better conditions.
                 </p>
             </p>
 
             <p>
-                Now instead of taking only the contested shots into consideration, we include also the semi-contested shots. As we 
+                For the same analysis, if we also include the semi-contested shots we 
                 will easily observe, the total percentage grows rapidly.
                 <section class="shots-analysis">
                     <h3 class="section-subtitle">Contested & Semi-Contested Analysis</h3>
@@ -338,7 +339,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="group-header"><td colspan="5">Fastbreak / Transition</td></tr>
+                                <tr class="group-header"><td colspan="5">Fastbreak / <br>Transition</td></tr>
                                 <tr>
                                     <td></td>
                                     <td class="win-label">Wins</td>
@@ -391,10 +392,46 @@
                 </section>
 
                 <p>
-                    The same thing is happening if we take also the semi-contested shots into consideration. The missed shots/total shots rate in late
-                    clock situations is less in games lost than games won. So why is it that the missed shots to total shots rate during late clock situations is greater in games lost
-                    than games won?
+                    The key conclusion here is the contested / semi-contested shots rate during the late clock time zone. A bit over than <strong>50%</strong> is that 
+                    rate, which states that Olympiakos has an average of <strong>15</strong> shots in the last time zone that are uncontested (<strong>30 shots total</strong> in the two games lost).
                 </p>
+
+                <p>
+                    It is easily more understandable if we check the <strong>uncontested shots distribution</strong> across time zones.
+                </p>
+                <!--<h3 class="section-subtitle" style="margin-top: 2rem;">Uncontested Shots Distribution by Time Zone</h3>-->
+                    <div class="dist-container">
+                        <div class="dist-group">
+                        <h4>Wins (Breakdown)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment fastbreak" style="width: 16.87%" title="Fastbreak: 16.87%">16.9%</div>
+                                <div class="segment setgame" style="width: 68.67%" title="Set Game: 68.67%">68.7%</div>
+                                <div class="segment lateclock" style="width: 14.46%" title="Late Clock: 14.46%">14.5%</div>
+                            </div>
+                        </div>
+
+                        <div class="dist-group">
+                            <h4>Losses (Breakdown)</h4>
+                            <div class="stacked-bar">
+                                <div class="segment fastbreak" style="width: 3.70%" title="Fastbreak: 3.70%">3.7%</div>
+                                <div class="segment setgame" style="width: 66.67%" title="Set Game: 66.67%">66.7%</div>
+                                <div class="segment lateclock" style="width: 29.63%" title="Late Clock: 29.63%">29.6%</div>
+                            </div>
+                        </div>
+        
+                        <div class="dist-legend">
+                            <span class="legend-item"><i class="dot fb"></i> Fastbreak / Transition</span>
+                            <span class="legend-item"><i class="dot sg"></i> Set Game</span>
+                            <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;">
+                        <strong>Key Insight:</strong> In losses, the percentage of uncontested shots coming from fastbreak situations drops dramatically from <strong>16.87%</strong> to just 
+                        <strong>3.70%</strong>, while late-clock pressure shots double in frequency (from <strong>14.46%</strong> to <strong>29.63%</strong>).
+                        The opposing team does not allow Olympiakos to run down the court during the first 5 seconds, either by applying pressure on the playmaker, or by not allowing easy
+                        turnovers and letting the team to execute a fastbreak (<strong>Average Opponent's TOs: 10 (losses), 14.22 (wins), 13.83(wins in Euroleague)</strong>).
+                    </p>
             </p>
 
             <p>
@@ -439,42 +476,21 @@
                         </table>
                     </div>
 
-                    <h3 class="section-subtitle" style="margin-top: 2rem;">Uncontested Shots Distribution by Time Zone</h3>
-                    <div class="dist-container">
-                        <div class="dist-group">
-                        <h4>Wins (Breakdown)</h4>
-                            <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 16.87%" title="Fastbreak: 16.87%">16.9%</div>
-                                <div class="segment setgame" style="width: 68.67%" title="Set Game: 68.67%">68.7%</div>
-                                <div class="segment lateclock" style="width: 14.46%" title="Late Clock: 14.46%">14.5%</div>
-                            </div>
-                        </div>
-
-                        <div class="dist-group">
-                            <h4>Losses (Breakdown)</h4>
-                            <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 3.70%" title="Fastbreak: 3.70%">3.7%</div>
-                                <div class="segment setgame" style="width: 66.67%" title="Set Game: 66.67%">66.7%</div>
-                                <div class="segment lateclock" style="width: 29.63%" title="Late Clock: 29.63%">29.6%</div>
-                            </div>
-                        </div>
-        
-                        <div class="dist-legend">
-                            <span class="legend-item"><i class="dot fb"></i> Fastbreak / Transition</span>
-                            <span class="legend-item"><i class="dot sg"></i> Set Game</span>
-                            <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 1.5rem;">
-                        <strong>Key Insight:</strong> In losses, the percentage of uncontested shots coming from fastbreak situations drops dramatically from <strong>16.87%</strong> to just <strong>3.70%</strong>, while late-clock pressure shots double in frequency (from 14.46% to 29.63%).
+                    <p>
+                        The uncontested shots that are executed in losses are <strong>7% less</strong> than those in games won. Now, imagine that a significant amount
+                        of the uncontested shots in losses are executed during the last time zone, in which the players are worn out.
                     </p>
+
                 </section>
             </p>
 
             <p>
                 <section class="shot-creation-analysis">
+                    
                     <h3 class="section-subtitle">Shot Creation Methods</h3>
+                    Moving from the contested/uncontested analysis, we 're going to check out how did the team create all of its shots, during the recorded time period.
+                    We discriminate these methods in several categories. Those categories are inside-out passes (1), side-to-side passes (2), player iso (3), transition/fastbreak (5),
+                    pick 'n roll (7), in-the-paint/in-the post passes (8), cut to the basket (9), offensive rebound/2nd chance (10).
         
                     <div class="creation-grid">
                         <div class="creation-col">
@@ -606,6 +622,8 @@
             <p>
                 <section class="shot-creation-analysis">
                     <h3 class="section-subtitle">Uncontested Shot Creation Methods</h3>
+                    Now with a percentage of 52% of uncontested shots in games won and one of 45% in games lost, it is interesting to check out how did
+                    these uncontested shots come up. Do the categories differentiate between wins and losses?
         
                     <div class="creation-grid">
                         <div class="creation-col">
@@ -714,11 +732,15 @@
 
                 <p>
                     Now, the uncontested shots that came up tell a whole different story. In games won the inside-out passes method create
-                    the most amount of uncontested shots (over than 50%) and the side-to-side passes with the pick 'n rolls are up next in
+                    the most amount of uncontested shots <strong>(over than 50%)</strong> and the side-to-side passes with the pick 'n rolls are up next in
                     the hierarchy.
                 </p>
                 <p>
                     In games lost pick 'n rolls and cut to the basket methods are the ones that create the most amount of uncontested shots.
+                </p>
+                <p>
+                    But, our initial thinking about player isolations being a category that leads to more semi-contested/contested shots than uncontested ones,
+                    gets to be confirmed from the chart above.
                 </p>
             </p>
 

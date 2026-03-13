@@ -97,7 +97,7 @@ section {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: var(--navy);
-    border-left: 5px solid var(--sky-blue);
+    border-left: 4px solid #0056b3;
     padding-left: 1rem;
 }
 
@@ -838,3 +838,54 @@ footer {
     color: rgb(11, 11, 85);
 }
 
+/* Styling για το νέο section */
+.euroleague-overview {
+    padding-bottom: 2rem; /* padding για απόσταση από τα επόμενα */
+}
+
+/* Styling για το clickable summary */
+.euroleague-overview summary {
+    cursor: pointer; /* Αλλαγή pointer σε χεράκι */
+    list-style: none; /* Κρύβει το default τριγωνάκι του browser */
+    outline: none; /* Αφαιρεί το default focus border */
+}
+
+/* Styling για τον τίτλο που μοιάζει με τους άλλους τίτλους */
+.euroleague-overview .section-title-interactive {
+    display: flex; /* Για να ευθυγραμμίσουμε τον τίτλο με το icon */
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #0056b3; /* Το μπλε border αριστερά που έχεις (image_1.png) */
+    padding-left: 15px;
+    font-size: 2rem; /* Ίδιο μέγεθος με τα άλλα H2 */
+    font-weight: bold;
+    color: #000; /* Μαύρο χρώμα */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Styling για το εικονίδιο '+' */
+.euroleague-overview .expand-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease; /* Animation για την περιστροφή */
+}
+
+/* Animation: Όταν το <details> είναι ανοιχτό, το '+' περιστρέφεται */
+.euroleague-overview details[open] .expand-icon {
+    transform: rotate(45deg); /* Γίνεται 'x' ή απλά περιστρέφεται */
+}
+
+/* Styling για το περιεχόμενο που εμφανίζεται */
+.euroleague-overview .details-content {
+    padding-left: 19px; /* Ελάχιστη εσοχή για να ευθυγραμμιστεί με το κείμενο */
+    padding-top: 10px;
+}
+
+/* Styling για τις παραγράφους μέσα στο details (image_2.png στυλ) */
+.euroleague-overview .details-content p {
+    font-family: Arial, sans-serif; /* Ή όποια font χρησιμοποιείς */
+    font-size: 1rem;
+    color: #444; /* Γκριζωπό κείμενο */
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}

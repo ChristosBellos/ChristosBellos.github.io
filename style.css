@@ -893,3 +893,19 @@ footer {
     line-height: 1.6;
     margin-bottom: 1.2rem;
 }
+
+.download-btn {
+    background-color: #001f5b; /* Το σκούρο μπλε του site σου */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #05a535; /* Κόκκινο του Ολυμπιακού στο hover */
+}

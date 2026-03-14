@@ -65,8 +65,12 @@ nav ul li a:hover {
 
 /* --- Hero Section --- */
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
-                url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=1600') center/cover;
+     /* Η εικόνα μπαίνει ΠΡΩΤΗ και μετά το gradient */
+    background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), 
+                url('olympiakos.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -855,19 +859,21 @@ footer {
     display: flex; /* Για να ευθυγραμμίσουμε τον τίτλο με το icon */
     justify-content: space-between;
     align-items: center;
-    border-left: 4px solid #0056b3; /* Το μπλε border αριστερά που έχεις (image_1.png) */
-    padding-left: 15px;
+    padding: 1em 1.5em;
     font-size: 2rem; /* Ίδιο μέγεθος με τα άλλα H2 */
     font-weight: bold;
-    color: #000; /* Μαύρο χρώμα */
+    color: white; /* Μαύρο χρώμα */
     margin-top: 0;
     margin-bottom: 1rem;
+    background-color:#0a192f;
+    border-radius: 10px;
 }
 
 /* Styling για το εικονίδιο '+' */
 .euroleague-overview .expand-icon {
     font-size: 1.2rem;
     transition: transform 0.3s ease; /* Animation για την περιστροφή */
+    color: white;
 }
 
 /* Animation: Όταν το <details> είναι ανοιχτό, το '+' περιστρέφεται */
@@ -879,6 +885,8 @@ footer {
 .euroleague-overview .details-content {
     padding-left: 19px; /* Ελάχιστη εσοχή για να ευθυγραμμιστεί με το κείμενο */
     padding-top: 10px;
+    padding-bottom: 20px; /* Πρόσθεσε λίγο κενό πριν τη γραμμή */
+    border-bottom: 2px solid #9da7b5; /* ΠΡΕΠΕΙ να γράψεις 'solid' και το πάχος (3px) */
 }
 
 /* Styling για τις παραγράφους μέσα στο details (image_2.png στυλ) */

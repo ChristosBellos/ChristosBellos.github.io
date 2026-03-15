@@ -959,3 +959,13 @@ footer {
     font-size: 0.95rem;
     letter-spacing: 0.5px;
 }
+
+.ending-text{
+    font-size: 1.25rem;             /* Μεγαλύτερη γραμματοσειρά από το κανονικό κείμενο */
+    font-weight: 600;               /* Έντονη γραφή */
+    color: var(--navy);             /* Χρήση του βασικού σου χρώματος */
+    /*border-left: 4px solid var(--cyan); /* Μια γραμμή στα αριστερά που ταιριάζει με το design σου */
+    /*padding-left: 6rem;           /* Απόσταση από τη γραμμή */
+    margin-top: 3rem;               /* Κενό από την προηγούμενη παράγραφο */
+    /*font-style: italic;             /* Πλάγια γραφή για περισσότερο ύφος */
+}

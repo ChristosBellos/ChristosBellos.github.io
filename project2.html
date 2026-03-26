@@ -24,7 +24,7 @@
 
     <main>
 
-        <section class="project-hero">
+        <section class="project-hero2">
             <h1>Panathinaikos Aktor January Analysis</h1>
             <p class="subtitle">EuroLeague: A Data-Driven Deep Dive</p>
         </section>
@@ -33,7 +33,10 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Project Analysis: January – February Deep Dive</h2>
         
-                <p>This project examines the performance of <strong>Panathinaikos</strong> in the EuroLeague, covering all matches from <strong>January 6</strong>, 2026, to <strong>February 3</strong>, 2026. Our goal is to dissect every possession to uncover the tactical trends of the Greek team.</p>
+                <p>
+                    Just like in <a href="project1.html" class="proj1">Project 1</a>, this project examines the performance of <strong>Panathinaikos</strong> in the EuroLeague, covering all matches from <strong>January 6</strong>, 2026, to <strong>February 3</strong>, 2026. Our goal is to dissect every possession to uncover the tactical trends of the Greek team
+                    and find any possible patterns that will help preventing it from negative results.
+                </p>
 
                 <p>
                     This analysis is based on original data collected by watching every game of the period one by one. The project focuses on non-traditional statistics 
@@ -41,7 +44,7 @@
                     defensive categories, providing a clear view of how the team operates in each phase of the game.
                 </p>
                 <p>
-                    Before diving into the project, if you want you can download the custom dataset (excel file) from here:<br>
+                    Before diving into the project, if you want you can download the custom datasets (excel file) from here:<br>
                     <a href="Panathinaikos January Stats.xlsx" download class="download-btn">Download Offense Dataset (.xlsx)</a>
                 </p>
                 <p>
@@ -87,28 +90,28 @@
                     some interesting stats were collected, that deserve some notice.
                 </p>
                 <p>
-                Panathinaikos' average time for each game, before a shot was taken, was approximately <strong>12.85 seconds</strong>. Specifically, a 
+                Panathinaikos' average time for each game, before a shot was taken, was approximately <strong>13.58 seconds</strong>. Specifically, a 
                 discrimination between the team's wins and losses is appplied.
                 <div class="analysis-visual">
                     <h3 class="section-subtitle">Average Possession Length: Wins vs Losses</h3>
                     <div class="pace-comparison">
                         <div class="pace-card win">
                             <span class="label">Wins</span>
-                            <div class="time-value">13.58s</div>
+                            <div class="time-value">13.40s</div>
                             <div class="pace-bar-container">
                                 <div class="pace-bar" style="width: 53%;"></div> </div>
                         </div>
 
                         <div class="pace-card win">
                             <span class="label">Wins (Euroleague Only)</span>
-                            <div class="time-value">13.40s</div>
+                            <div class="time-value">14.32s</div>
                             <div class="pace-bar-container">
                                 <div class="pace-bar" style="width: 56%;"></div> </div>
                         </div>
 
                         <div class="pace-card loss">
                             <span class="label">Losses</span>
-                            <div class="time-value">14.32s</div>
+                            <div class="time-value">13.83s</div>
                             <div class="pace-bar-container">
                                 <div class="pace-bar" style="width: 52.7%;"></div> </div>
                         </div>
@@ -132,18 +135,18 @@
                         <div class="dist-group">
                             <h4>Wins</h4>
                             <div class="stacked-bar">
-                            <div class="segment fastbreak" style="width: 7.73%" title="Fastbreak: 7.26%">7.73%</div>
-                            <div class="segment setgame" style="width: 67.83%" title="Set Game: 73.39%">67.83%</div>
-                            <div class="segment lateclock" style="width: 24.44%" title="Late Clock: 19.35%">24.44%</div>
+                            <div class="segment fastbreak" style="width: 7.73%" title="Fastbreak: 7.73%">7.73%</div>
+                            <div class="segment setgame" style="width: 67.83%" title="Set Game: 67.83%">67.83%</div>
+                            <div class="segment lateclock" style="width: 24.44%" title="Late Clock: 24.44%">24.44%</div>
                             </div>
                         </div>
 
                         <div class="dist-group">
                             <h4>Losses</h4>
                             <div class="stacked-bar">
-                            <div class="segment fastbreak" style="width: 5.13%" title="Fastbreak: 4.14%">5.13%</div>
-                            <div class="segment setgame" style="width: 70.33%" title="Set Game: 74.48%">70.33%</div>
-                            <div class="segment lateclock" style="width: 24.54%" title="Late Clock: 21.38%">24.54%</div>
+                            <div class="segment fastbreak" style="width: 5.13%" title="Fastbreak: 5.13%">5.13%</div>
+                            <div class="segment setgame" style="width: 70.33%" title="Set Game: 70.33%">70.33%</div>
+                            <div class="segment lateclock" style="width: 24.54%" title="Late Clock: 24.54%">24.54%</div>
                             </div>
                         </div>
 
@@ -179,14 +182,14 @@
                             <td></td>
                             <td class="win-label">Wins</td>
                             <td>19.35%</td>
-                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 32.26%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 19.35%"></div></div></td>
                             <td>1.00 / 5.17</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td class="loss-label">Losses</td>
                             <td>28.57%</td>
-                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 42.86%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 28.57%"></div></div></td>
                             <td>1.00 / 3.50</td>
                         </tr>
 
@@ -195,14 +198,14 @@
                             <td></td>
                             <td class="win-label">Wins</td>
                             <td>43.01%</td>
-                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 52.57%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 43.01%"></div></div></td>
                             <td>19.50 / 45.33</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td class="loss-label">Losses</td>
                             <td>44.27%</td>
-                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 51.56%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 44.27%"></div></div></td>
                             <td>21.25 / 48.00</td>
                         </tr>
 
@@ -211,14 +214,14 @@
                             <td></td>
                             <td class="win-label">Wins</td>
                             <td>55.10%</td>
-                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 66.33%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill win" style="width: 55.10%"></div></div></td>
                             <td>9.00 / 16.33</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td class="loss-label">Losses</td>
                             <td>50.75%</td>
-                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 64.18%"></div></div></td>
+                            <td><div class="bar-bg"><div class="bar-fill loss" style="width: 50.75%"></div></div></td>
                             <td>8.50 / 16.75</td>
                         </tr>
                     </tbody>
@@ -300,94 +303,25 @@
             </p>
 
             <p>
-                For the same analysis, if we also include the semi-contested shots we 
-                will easily observe, the total percentage grows rapidly.
-                <section class="shots-analysis">
-                    <h3 class="section-subtitle">Contested & Semi-Contested Analysis</h3>
-    
-                    <div class="table-container">
-                        <table class="analysis-table">
-                            <thead>
-                                <tr>
-                                    <th>Time Zone</th>
-                                    <th>Result</th>
-                                    <th>Contested/Semi %</th>
-                                    <th>Pressure Bar</th>
-                                    <th>Shots Ratio (Pressure/Total)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="group-header"><td colspan="5">Fastbreak / <br>Transition</td></tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="win-label">Wins</td>
-                                    <td>41.94%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 41.94%"></div></div></td>
-                                    <td>2.17 / 5.17</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="loss-label">Losses</td>
-                                    <td>71.43%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 71.43%"></div></div></td>
-                                    <td>2.50 / 3.50</td>
-                                </tr>
-
-                                <tr class="group-header"><td colspan="5">Set Game</td></tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="win-label">Wins</td>
-                                    <td>72.06%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 72.06%"></div></div></td>
-                                    <td>32.67 / 45.33</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="loss-label">Losses</td>
-                                    <td>72.92%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 72.92%"></div></div></td>
-                                    <td>35.00 / 48.00</td>
-                                </tr>
-
-                                <tr class="group-header"><td colspan="5">Late Clock</td></tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="win-label">Wins</td>
-                                    <td>87.76%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill win" style="width: 87.76%"></div></div></td>
-                                    <td>14.33 / 16.33</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="loss-label">Losses</td>
-                                    <td>79.10%</td>
-                                    <td><div class="bar-bg"><div class="bar-fill loss" style="width: 79.10%"></div></div></td>
-                                    <td>13.25 / 16.75</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
                 <p>
-                    It is easily more understandable if we check the <strong>uncontested shots distribution</strong> across time zones.
+                    It is easily more understandable if we check the <strong>uncontested shots percentage for all the shots taken</strong> across time zones.
                 </p>
                     <div class="dist-container">
                         <div class="dist-group">
                         <h4>Wins (Breakdown)</h4>
                             <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 20.78%" title="Fastbreak: 16.87%">20.78%</div>
-                                <div class="segment setgame" style="width: 71.43%" title="Set Game: 71.43%">71.43%</div>
-                                <div class="segment lateclock" style="width: 7.79%" title="Late Clock: 7.79%">7.79%</div>
+                                <div class="segment fastbreak" style="width: 58.03%" title="Fastbreak: 58.03%">58.03%</div>
+                                <div class="segment setgame" style="width: 27.93%" title="Set Game: 27.93%">27.93%%</div>
+                                <div class="segment lateclock" style="width: 12.25%" title="Late Clock: 12.25%">12.25%</div>
                             </div>
                         </div>
 
                         <div class="dist-group">
                             <h4>Losses (Breakdown)</h4>
                             <div class="stacked-bar">
-                                <div class="segment fastbreak" style="width: 7.14%" title="Fastbreak: 7.14%">7.14%</div>
-                                <div class="segment setgame" style="width: 73.81%" title="Set Game: 73.81%">73.81%</div>
-                                <div class="segment lateclock" style="width: 19.05%" title="Late Clock: 19.05%">19.05%</div>
+                                <div class="segment fastbreak" style="width: 28.57%" title="Fastbreak: 28.57%">28.57%</div>
+                                <div class="segment setgame" style="width: 27.08%" title="Set Game: 27.08%">27.08%</div>
+                                <div class="segment lateclock" style="width: 20.90%" title="Late Clock: 20.90%">20.90%</div>
                             </div>
                         </div>
         
@@ -397,6 +331,15 @@
                             <span class="legend-item"><i class="dot lc"></i> Late Clock</span>
                         </div>
                     </div>
+                <p>
+                    The difference between each time zone's uncontested shots is perfectly clear on the chart above. Although during set game and late clock situations
+                    the uncontested shots percentage is almost the same, if not bigger, the significant difference is made during fastbreak situations.
+                </p>
+                <p>
+                    For every 10 fastbreak/transition shots the team takes in games won, almost 6 of them will be uncontested, whereas in lost games less than
+                    3 shots will be uncontested. In that major part of Panathinaikos' game style, which is to run the floor, opponents apply more pressure to fastbreak shots
+                    in order to take away an important tool that will lead the team to a winning result.
+                </p>
             </p>
 
             <p>
@@ -437,6 +380,22 @@
                         </table>
                     </div>
                 </section>
+
+                <p>
+                    In games won out of the total uncontested shots taken, <strong>almost 21% came from fastbreak/transition situations (2 out of 10 uncontested shots)</strong>,
+                    and <strong>71.5% came from set game situations (more than 7 out of 10 uncontested shots)</strong>. The least percentage amount comes from <strong>late clock situations</strong>
+                    with a percentage of <strong>7.8% (less than 1 out of 10 uncontested shots).</strong> 
+                </p>
+                <p>
+                    In games lost the metric switches between fastbreaks and late clock situations. Out of all uncontested shots taken <strong>almost 7% comes from
+                    fastbreaks/transitions (less than 1 out of 10 uncontested shots)</strong> and <strong>almost 20% comes from late clock situations (2 out of 10 uncontested shots).</strong>
+                    The percentage of set game situations is almost the same as the one in games won.
+                </p>
+                <p>
+                    This means that Panathinaikos has more uncontested options during fastbreaks in games won, which is a result of opponent's turnovers or missed shots that led to
+                    quick offenses. In games lost the teams has less easy options during fastbreaks, which is a result of 1. less fastbreaks perfromed and 2. more pressure from the 
+                    opponent.
+                </p>
             </p>
 
             <p>

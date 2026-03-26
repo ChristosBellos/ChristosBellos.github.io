@@ -287,10 +287,36 @@ footer {
     padding: 0 10%;
 }
 
+.project-hero2 {
+    /* Συνδυασμός gradient overlay και εικόνας σε μία δήλωση background */
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                url("https://www.ekathimerini.com/wp-content/uploads/2025/12/Panathinaikos_BC_InTime.jpg") center/cover;
+    
+    height: 60vh; /* Δίνει ύψος παρόμοιο με την εικόνα σας */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 10%;
+}
+
 .project-hero h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: var(--white);
+}
+
+.project-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.proj1{
+    text-decoration: underline;
+    color: black;
 }
 
 .subtitle {

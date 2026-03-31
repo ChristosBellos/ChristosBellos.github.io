@@ -606,6 +606,7 @@ footer {
 
 .win-label { color: #2ecc71; font-weight: bold; }
 .loss-label { color: #e74c3c; font-weight: bold; }
+.neutral-label {color: #002d5a; font-weight: bold; }
 
 /* Styling for the Efficiency Bar */
 .bar-bg {
@@ -694,8 +695,9 @@ footer {
     transition: width 0.8s ease-out;
 }
 
-.chart-bar.win { background: var(--sky-blue); }
+.chart-bar.win { background: #007a33; }
 .chart-bar.loss { background: #e74c3c; }
+.chart-bar.neutral { background: #002d5a}
 
 @media (max-width: 768px) {
     .creation-grid { grid-template-columns: 1fr; }
@@ -994,4 +996,79 @@ footer {
     /*padding-left: 6rem;           /* Απόσταση από τη γραμμή */
     margin-top: 3rem;               /* Κενό από την προηγούμενη παράγραφο */
     /*font-style: italic;             /* Πλάγια γραφή για περισσότερο ύφος */
+}
+
+/* Container styling */
+.analysis-section {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General Stats Card */
+.stats-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #007a33; /* PAO Green */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.distribution-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.dist-item span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007a33;
+}
+
+/* Comparison Grid */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.comparison-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.win-border { border-top: 5px solid #28a745; }
+.loss-border { border-top: 5px solid #dc3545; }
+
+.main-stat {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+.main-stat small {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.sub-stats {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-stats li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comparison-grid { grid-template-columns: 1fr; }
 }

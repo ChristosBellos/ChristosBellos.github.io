@@ -275,7 +275,7 @@ footer {
 .project-hero {
     /* Συνδυασμός gradient overlay και εικόνας σε μία δήλωση background */
     background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
-                url('https://scontent.fath4-2.fna.fbcdn.net/v/t39.30808-6/571163333_1368358571317610_8473408709104890436_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd6889&_nc_ohc=4Topwr9XQh4Q7kNvwGBxVqW&_nc_oc=AdkRuKyqTFHPsjo8GqvdGXMLtAi9wAzQV34Sb9qbrL9pz4ughbpZvI6yXHzv7ve8Hu8&_nc_zt=23&_nc_ht=scontent.fath4-2.fna&_nc_gid=sBOsg-G5KWA3vy9gm0akAg&_nc_ss=8&oh=00_AfwBGcwke5WjXSveWTJyqrRuhwHnU4CuNRfbz4-Q0cXjXQ&oe=69BB0247') center/cover;
+                url('https://sportal365images.com/process/smp-images-production/sportal.gr/18072025/9ac0d8fc-aef8-4fd7-a345-0dbba4d74a94.jpg?operations=crop(0:8:1199:683),fit(480:)&format=webp') center/cover;
     
     height: 60vh; /* Δίνει ύψος παρόμοιο με την εικόνα σας */
     display: flex;

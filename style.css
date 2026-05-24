@@ -1085,3 +1085,30 @@ footer {
 @media (max-width: 768px) {
     .comparison-grid { grid-template-columns: 1fr; }
 }
+
+
+.Tableau {
+    background: var(--light-gray); /* Ή αν θες σκοτεινό στυλ, βάλε: rgba(17, 34, 64, 0.6) */
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--sky-blue); /* Η χαρακτηριστική μπλε γραμμή σου */
+    width: 100%;
+    max-width: 800px; /* Ιδανικό πλάτος για τα μεγάλα visualizations */
+    margin: 1.5rem auto;
+    transition: transform 0.3s ease;
+}
+
+.Tableau:hover {
+    transform: translateY(-5px); /* Responsive εφέ όπως οι υπόλοιπες κάρτες σου */
+}
+
+/* Μορφοποίηση των τίτλων H3 μέσα στα Tableau blocks */
+.Tableau h3 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e0e6ed;
+    padding-bottom: 0.5rem;
+}

@@ -1112,3 +1112,82 @@ footer {
     border-bottom: 2px solid #e0e6ed;
     padding-bottom: 0.5rem;
 }
+
+/* --- Custom Sports Analytics Tables & Cards --- */
+.custom-analytics-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--sky-blue); /* Ευθυγράμμιση με το border style που έχετε */
+    transition: transform 0.3s ease;
+}
+
+.custom-analytics-card:hover {
+    transform: translateY(-5px);
+}
+
+.analytics-title {
+    color: var(--navy);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.custom-analytics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-family);
+    font-size: 0.95rem;
+}
+
+.custom-analytics-table thead {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.custom-analytics-table th {
+    padding: 12px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.custom-analytics-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--text-main);
+    text-align: center;
+}
+
+/* Zebra striping χρησιμοποιώντας το light-gray σας */
+.custom-analytics-table tbody tr:nth-child(even) {
+    background-color: rgba(244, 247, 246, 0.6); 
+}
+
+/* Hover εφέ στις γραμμές */
+.custom-analytics-table tbody tr:hover {
+    background-color: rgba(48, 102, 190, 0.05); /* Απαλό sky-blue */
+}
+
+/* Highlight για το όνομα της ομάδας */
+.custom-analytics-table .team-name {
+    text-align: left;
+    font-weight: 500;
+    color: var(--royal-blue);
+}
+
+/* Ανάδειξη του #1 της λίστας με το Cyan χρώμα σας */
+.custom-analytics-table tr.top-row {
+    background-color: rgba(100, 255, 218, 0.15) !important; 
+}
+
+/* Έμφαση στη στήλη Pace (που είναι το κύριο metric) */
+.custom-analytics-table .highlight-stat {
+    font-weight: 700;
+    color: var(--sky-blue);
+}

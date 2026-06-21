@@ -1191,3 +1191,94 @@ footer {
     font-weight: 700;
     color: var(--sky-blue);
 }
+
+/* --- Expanded Metrics Table Styled v2 --- */
+.custom-wide-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    border-top: 5px solid var(--sky-blue); /* Στυλ από το css σας */
+    width: 100%;
+}
+
+.custom-expanded-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-family);
+    margin-top: 15px;
+}
+
+/* Κεφαλίδες με το Navy χρώμα σας */
+.custom-expanded-table thead th {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border: none;
+}
+
+/* Ανοιχτόχρωμο γκρι Background στα κελιά & Μεγαλύτερο Padding για διεύρυνση */
+.custom-expanded-table tbody td {
+    padding: 18px 20px;
+    background-color: #f8f9fa; /* Ανοιχτόχρωμο γκρι background */
+    border-bottom: 2px solid #ffffff; /* Λευκό διαχωριστικό ανάμεσα στις γραμμές */
+    color: var(--text-main);
+    font-size: 1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Στοίχιση αριστερά για την πρώτη στήλη (Κατηγορίες) */
+.custom-expanded-table tbody td.team-category-cell {
+    text-align: left;
+    font-weight: 600;
+    color: var(--royal-blue);
+    width: 35%; /* Δίνει χώρο στην περιγραφή */
+}
+
+.custom-expanded-table tbody td.count-cell {
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+/* Custom Badges για τα ποσοστά με Σκούρο Navy κείμενο αντί για λευκό */
+.badge-stat {
+    display: inline-block;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    min-width: 80px;
+    text-align: center;
+    color: var(--navy) !important; /* Σκούρο χρώμα γραμματοσειράς για μέγιστη αντίθεση */
+}
+
+/* Απαλό πράσινο/κόκκινο φόντο που δένει με το light gray */
+.badge-high-custom {
+    background-color: #d1e7dd; 
+    border: 1px solid #a3cfbb;
+}
+
+.badge-low-custom {
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+}
+
+/* Μικρός αριθμός (πλήθος ομάδων) δίπλα από το ποσοστό */
+.count-small {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-left: 6px;
+    font-weight: 500;
+}
+
+/* Hover εφέ που κάνει τη γραμμή να ξεχωρίζει */
+.custom-expanded-table tbody tr:hover td {
+    background-color: #f1f3f5;
+}

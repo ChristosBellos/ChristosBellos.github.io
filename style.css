@@ -344,7 +344,7 @@ footer {
 }
 
 .content-wrapper {
-    max-width: 800px; /* Για να είναι ευανάγνωστο το κείμενο */
+    max-width: 1000px; /* Για να είναι ευανάγνωστο το κείμενο */
     margin: 0 auto;
 }
 
@@ -1116,7 +1116,7 @@ footer {
 /* --- Custom Sports Analytics Tables & Cards --- */
 .custom-analytics-card {
     background: var(--white);
-    padding: 25px;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-top: 5px solid var(--sky-blue); /* Ευθυγράμμιση με το border style που έχετε */
@@ -1195,11 +1195,12 @@ footer {
 /* --- Expanded Metrics Table Styled v2 --- */
 .custom-wide-card {
     background: #ffffff;
-    padding: 35px;
+    padding: 10px; /* Αυξήθηκε ελαφρώς το εσωτερικό padding */
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    border-top: 5px solid var(--sky-blue); /* Στυλ από το css σας */
-    width: 100%;
+    border-top: 5px solid var(--sky-blue);
+    max-width: 1400px;
+    width: 100%; /* Διασφαλίζει full width */
 }
 
 .custom-expanded-table {
@@ -1207,13 +1208,14 @@ footer {
     border-collapse: collapse;
     font-family: var(--font-family);
     margin-top: 15px;
+    table-layout: fixed; /* Αναγκάζει τον browser να σεβαστεί τα ποσοστά width */
 }
 
 /* Κεφαλίδες με το Navy χρώμα σας */
 .custom-expanded-table thead th {
     background-color: var(--navy);
     color: var(--white);
-    padding: 16px 20px;
+    padding: 18px 20px;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1222,23 +1224,32 @@ footer {
     border: none;
 }
 
+/* Ρύθμιση πλάτους για τις κεφαλίδες των στατιστικών */
+.custom-expanded-table thead th:not(:first-child) {
+    width: 14%; /* Μοιράζει ομοιόμορφα τις υπόλοιπες 4 στήλες */
+}
+
 /* Ανοιχτόχρωμο γκρι Background στα κελιά & Μεγαλύτερο Padding για διεύρυνση */
 .custom-expanded-table tbody td {
-    padding: 18px 20px;
-    background-color: #f8f9fa; /* Ανοιχτόχρωμο γκρι background */
-    border-bottom: 2px solid #ffffff; /* Λευκό διαχωριστικό ανάμεσα στις γραμμές */
+    padding: 20px 22px; /* Αυξήθηκε για να γίνει πιο "γεμάτος" ο πίνακας */
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #ffffff; 
     color: var(--text-main);
     font-size: 1rem;
     vertical-align: middle;
     text-align: center;
 }
 
-/* Στοίχιση αριστερά για την πρώτη στήλη (Κατηγορίες) */
-.custom-expanded-table tbody td.team-category-cell {
+/* Στοίχιση αριστερά και αύξηση πλάτους για την πρώτη στήλη (Κατηγορίες) */
+.custom-expanded-table tbody td.team-category-cell,
+.custom-expanded-table thead th.text-start {
     text-align: left;
+    width: 44%; /* Αυξήθηκε από 35% για να απλωθεί το κείμενο οριζόντια */
+}
+
+.custom-expanded-table tbody td.team-category-cell {
     font-weight: 600;
     color: var(--royal-blue);
-    width: 35%; /* Δίνει χώρο στην περιγραφή */
 }
 
 .custom-expanded-table tbody td.count-cell {
@@ -1253,9 +1264,9 @@ footer {
     font-weight: 700;
     font-size: 0.95rem;
     border-radius: 6px;
-    min-width: 80px;
+    min-width: 85px;
     text-align: center;
-    color: var(--navy) !important; /* Σκούρο χρώμα γραμματοσειράς για μέγιστη αντίθεση */
+    color: var(--navy) !important; 
 }
 
 /* Απαλό πράσινο/κόκκινο φόντο που δένει με το light gray */

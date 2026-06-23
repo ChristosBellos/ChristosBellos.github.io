@@ -1293,3 +1293,13 @@ footer {
 .custom-expanded-table tbody tr:hover td {
     background-color: #f1f3f5;
 }
+
+.small-header {
+    font-size: 120%;
+    color: var(--navy)
+}
+
+.period{
+    font-style:italic;
+    color: var(--text-main);
+}

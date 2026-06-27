@@ -36,31 +36,31 @@
                 <p>
                     Τα τελευταία χρόνια, αναφέρεται όλο και πιο συχνά ότι το παιχνίδι του μπάσκετ έχει γίνει πιο γρήγορο. Γρηγορότερες επιθέσεις, 
                     πιο άμεσες επαναφορές της μπάλας μετά από καλάθι, περισσότεροι αιφνιδιασμοί, ενώ έχουν προστεθεί και κανονισμοί που βοηθάνε στην 
-                    αύξηση της ταχύτητας του παιχνιδιού (βλέπε ACB και τον κανόνα για την επαναφορά της μπάλας, όταν βγαίνει εκτός ορίων, χωρίς παρέμβαση διαιτητή). 
+                    αύξηση της ταχύτητας του παιχνιδιού (βλέπε ACB και τον κανόνα για την επαναφορά της μπάλας όταν βγαίνει εκτός ορίων, χωρίς παρέμβαση διαιτητή). 
                 </p>
 
                 <p>
-                    Οκ, με μία πρώτη ματιά φαίνεται ότι είναι σωστό. Αλλά ισχύει γενικά; Έχει γίνει όντως το παιχνίδι πιο γρήγορο; Αν ναι, τότε οι πόντοι που πετυχαίνουν 
+                    Με μία πρώτη ματιά φαίνεται ότι είναι σωστό. Αλλά ισχύει γενικά; Έχει γίνει όντως το παιχνίδι πιο γρήγορο; Αν ναι, τότε οι πόντοι που πετυχαίνουν 
                     οι ομάδες θα πρέπει να είναι περισσότεροι, σωστά; Ή μήπως οι γρηγορότερες επιθέσεις οδηγούν και σε πιο βιαστικές αποφάσεις; Οι ομάδες με γρήγορο pace 
                     είναι αυτές που θα τα πάνε καλύτερα μέσα στη σεζόν; Όλα αυτά τα ερωτήματα θα απαντηθούν κατάλληλα σε αυτό το project.
                 </p>
 
                 <p>
-                    Προτού ξεκινήσουμε, να αναφέρω ότι για το συγκεκριμένο project χρησιμοποιήθηκαν dataframes α) που έχουν advanced stats για κάθε ομάδα 
-                    που έχει διαγωνιστεί στην Ευρωλίγκα (από τη σεζόν 2000-2001 μέχρι και σήμερα) και β) που έχουνβασικά στατιστικά για κάθε παίκτη που έχει παίξει στην Ευρωλίγκα 
+                    Προτού ξεκινήσουμε, να αναφέρω ότι για το συγκεκριμένο project χρησιμοποιήθηκαν πίνακες δεδομένων α) που έχουν advanced stats για κάθε ομάδα 
+                    που έχει διαγωνιστεί στην Ευρωλίγκα (από τη σεζόν 2000-2001 μέχρι και σήμερα) και β) που έχουν βασικά στατιστικά για κάθε παίκτη που έχει παίξει στην Ευρωλίγκα 
                     (από τη σεζόν 2000-2001 μέχρι και σήμερα). 
-                    <br />Ακολουθούν τα data frames διαθέσιμα προς λήψη.<br />
+                    <br />Ακολουθούν τα data frames διαθέσιμα προς λήψη:<br />
                     <a href="project-stats.xlsx" download class="download-btn">Euroleague Teams' Advanced Stats (.xlsx)</a>             <a href="player_stats_per_year.xlsx" download class="download-btn">Euroleague Players' Stats (.xlsx)</a><br />
                 </p>
 
                 <p>
-                    Οι περισσότεροι υπολογισμοί έγιναν με χρήση της python, ενώ τα visuals έγιναν μέσω tableau. Ακολουθεί ο κώδικας της python διαθέσιμος προς λήψη.<br />
+                    Οι περισσότεροι υπολογισμοί έγιναν με χρήση της python, ενώ τα visuals έγιναν μέσω tableau. Ακολουθεί ο κώδικας της python διαθέσιμος προς λήψη:<br />
                     <a href="project3_code.py" download class="download-btn">Python Code (.ipynb)</a><br />
                 </p>
 
                 <p>
-                    Ποιες είναι οι μετρικές που δείχνουν τις κατοχές και την αποτελεσματικότητα των ομάδων σε αυτές; Έχουμε το <strong>pace</strong> που είναι οι κατοχές
-                    της κάθε ομάδας ανά παιχνίδι (40 λεπτά), το <strong>offensive rating</strong> που δείχνει τον μέσο όρο των πόντων μίας ομάδας ανά 100 κατοχές και το 
+                    Ποιες είναι οι μετρικές που δείχνουν τις κατοχές και την αποτελεσματικότητα των ομάδων σε αυτές; Έχουμε το <strong>Pace</strong> που είναι οι κατοχές
+                    της κάθε ομάδας ανά παιχνίδι (40 λεπτά), το <strong>Offensive Rating</strong> που δείχνει τον μέσο όρο των πόντων μίας ομάδας ανά 100 κατοχές και το 
                     <strong>True Shooting %</strong> που δείχνει την αποτελεσματικότητα μίας ομάδας στο σκοράρισμα, είτε είναι βολές, είτε δίποντα, είτε τρίποντα.
                 </p>
 
@@ -89,26 +89,34 @@
                                                     <th>Year</th>
                                                     <th>Pace</th>
                                                     <th>ORtg</th>
+                                                    <th>TS%</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="top-row"><td>559</td><td class="team-name">Paris Basketball</td><td>2026</td><td>77.0</td><td>116.9</td></tr>
-                                                <tr><td>561</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2026</td><td>74.6</td><td>119.6</td></tr>
-                                                <tr><td>550</td><td class="team-name">Valencia Basket</td><td>2026</td><td>74.3</td><td>120.6</td></tr>
-                                                <tr><td>564</td><td class="team-name">Baskonia</td><td>2026</td><td>74.2</td><td>117.5</td></tr>
-                                                <tr><td>547</td><td class="team-name">ALBA Berlin</td><td>2025</td><td>73.9</td><td>105.2</td></tr>
-                                                <tr><td>556</td><td class="team-name">KK Crvena Zvezda</td><td>2026</td><td>73.6</td><td>117.3</td></tr>
-                                                <tr><td>554</td><td class="team-name">AS Monaco Basket</td><td>2026</td><td>73.5</td><td>120.1</td></tr>
-                                                <tr><td>518</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2024</td><td>73.1</td><td>119.8</td></tr>
-                                                <tr><td>544</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2025</td><td>73.0</td><td>117.6</td></tr>
-                                                <tr><td>552</td><td class="team-name">Hapoel Tel Aviv</td><td>2026</td><td>72.7</td><td>120.3</td></tr>
+                                                <tr class="top-row"><td>559</td><td class="team-name">Paris Basketball</td><td>2026</td><td>77.0</td><td>116.9</td><td>57.6</td></tr>
+                                                <tr><td>561</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2026</td><td>74.6</td><td>119.6</td><td>58.2</td></tr>
+                                                <tr><td>550</td><td class="team-name">Valencia Basket</td><td>2026</td><td>74.3</td><td>120.6</td><td>59.0</td></tr>
+                                                <tr><td>564</td><td class="team-name">Baskonia</td><td>2026</td><td>74.2</td><td>117.5</td><td>59.9</td></tr>
+                                                <tr><td>547</td><td class="team-name">ALBA Berlin</td><td>2025</td><td>73.9</td><td>105.2</td><td>54.2</td></tr>
+                                                <tr><td>556</td><td class="team-name">KK Crvena Zvezda</td><td>2026</td><td>73.6</td><td>117.3</td><td>58.3</td></tr>
+                                                <tr><td>554</td><td class="team-name">AS Monaco Basket</td><td>2026</td><td>73.5</td><td>120.1</td><td>59.4</td></tr>
+                                                <tr><td>518</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2024</td><td>73.1</td><td>119.8</td><td>58.0</td></tr>
+                                                <tr><td>544</td><td class="team-name">Maccabi FOX Tel Aviv</td><td>2025</td><td>73.0</td><td>117.6</td><td>58.7</td></tr>
+                                                <tr><td>552</td><td class="team-name">Hapoel Tel Aviv</td><td>2026</td><td>72.7</td><td>120.3</td><td>62.0</td></tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+                    <p>
+                        Τώρα, οι 10 ομάδες με το μεγαλύτερο pace τα τελευταία 5 χρόνια έχουν <strong>μέσο pace: 73.99 κατοχές ανά παιχνίδι</strong>
+                        και <strong>μέσο offensive rating: 117.49 πόντους ανά 100 κατοχές</strong> και <strong>μέσο true shooting %: 58.53%</strong>. 
+                    </p>
 
-                            <br />
+                    <section class="container my-5">
+                        <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="custom-analytics-card">
                                     <h3 class="analytics-title">Top 10 - Υψηλότερο Pace (Έως και το 2006)</h3>
@@ -121,19 +129,20 @@
                                                     <th>Year</th>
                                                     <th>Pace</th>
                                                     <th>ORtg</th>
+                                                    <th>TS%</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="top-row"><td>48</td><td class="team-name">Krka Novo Mesto</td><td>2002</td><td>81.3</td><td>110.6</td></tr>
-                                                <tr><td>21</td><td class="team-name">Lugano Tigers</td><td>2001</td><td>78.4</td><td>99.1</td></tr>
-                                                <tr><td>38</td><td class="team-name">CSKA Moscow</td><td>2002</td><td>77.9</td><td>109.6</td></tr>
-                                                <tr><td>54</td><td class="team-name">Buducnost Voli Podgorica</td><td>2002</td><td>77.2</td><td>107.5</td></tr>
-                                                <tr><td>49</td><td class="team-name">KK Zadar</td><td>2002</td><td>76.8</td><td>109.6</td></tr>
-                                                <tr><td>3</td><td class="team-name">Barca</td><td>2001</td><td>76.8</td><td>111.0</td></tr>
-                                                <tr><td>23</td><td class="team-name">ADO Basquetebol Sad Ovarense</td><td>2001</td><td>76.7</td><td>97.3</td></tr>
-                                                <tr><td>32</td><td class="team-name">Universo De'Longhi Treviso</td><td>2002</td><td>76.3</td><td>113.2</td></tr>
-                                                <tr><td>17</td><td class="team-name">Saint Petersburg Lions</td><td>2001</td><td>75.9</td><td>101.2</td></tr>
-                                                <tr><td>20</td><td class="team-name">London Towers</td><td>2001</td><td>75.4</td><td>102.8</td></tr>
+                                                <tr class="top-row"><td>48</td><td class="team-name">Krka Novo Mesto</td><td>2002</td><td>81.3</td><td>110.6</td><td>58.8</td></tr>
+                                                <tr><td>21</td><td class="team-name">Lugano Tigers</td><td>2001</td><td>78.4</td><td>99.1</td><td>52.5</td></tr>
+                                                <tr><td>38</td><td class="team-name">CSKA Moscow</td><td>2002</td><td>77.9</td><td>109.6</td><td>58.0</td></tr>
+                                                <tr><td>54</td><td class="team-name">Buducnost Voli Podgorica</td><td>2002</td><td>77.2</td><td>107.5</td><td>55.6</td></tr>
+                                                <tr><td>49</td><td class="team-name">KK Zadar</td><td>2002</td><td>76.8</td><td>109.6</td><td>54.4</td></tr>
+                                                <tr><td>3</td><td class="team-name">Barca</td><td>2001</td><td>76.8</td><td>111.0</td><td>56.3</td></tr>
+                                                <tr><td>23</td><td class="team-name">ADO Basquetebol Sad Ovarense</td><td>2001</td><td>76.7</td><td>97.3</td><td>57.7</td></tr>
+                                                <tr><td>32</td><td class="team-name">Universo De'Longhi Treviso</td><td>2002</td><td>76.3</td><td>113.2</td><td>59.3</td></tr>
+                                                <tr><td>17</td><td class="team-name">Saint Petersburg Lions</td><td>2001</td><td>75.9</td><td>101.2</td><td>56.9</td></tr>
+                                                <tr><td>20</td><td class="team-name">London Towers</td><td>2001</td><td>75.4</td><td>102.8</td><td>51.8</td></tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -144,14 +153,14 @@
                 </p>
             
                 <p>
-                    Οι 10 ομάδες με το μεγαλύτερο pace πριν το 2006 έχουν <strong>μέσο pace: 77.27 κατοχές ανά παιχνίδι</strong> και <strong>μέσο offensive 
-                    rating: 106.19 πόντους ανά 100 κατοχές</strong>. Τώρα, οι 10 ομάδες με το μεγαλύτερο pace τα τελευταία 5 χρόνια έχουν <strong>μέσο pace: 73.99 κατοχές ανά παιχνίδι</strong>
-                    και <strong>μέσο offensive rating: 117.49 πόντους ανά 100 κατοχές</strong>. 
+                    Οι 10 ομάδες με το μεγαλύτερο pace πριν το 2006 έχουν <strong>μέσο pace: 77.27 κατοχές ανά παιχνίδι</strong>, <strong>μέσο offensive 
+                    rating: 106.19 πόντους ανά 100 κατοχές</strong> και <strong>μέσο true shooting %: 56.13%%</strong>.
                 </p>
                 <p>
-                    Με μία πρώτη ματιά, λοιπόν, ενώ τα πρώτα χρόνια της διοργάνωσης οι ομάδες είχαν περισσότερες κατοχές ανά παιχνίδι, το offensive rating τους
-                    δεν είναι στο επίπεδο των ομάδων των τελευταίων 5 χρόνων. Η διαφορά στο offensive rating είναι περίπου <strong>στους 11 πόντους με 3 κατοχές λιγότερες</strong>,
-                    γεγονός που δείχνει την αύξηση της αποτελεσματικότητας των ομάδων. Θα δούμε και παρακάτω μία πιο εκτενή ανάλυση.
+                    Με μία πρώτη ματιά, λοιπόν, ενώ τα πρώτα χρόνια της διοργάνωσης οι ομάδες είχαν <strong>περισσότερες κατοχές ανά παιχνίδι</strong>, το offensive rating τους
+                    και το true shooting % <strong>δεν είναι στο επίπεδο των ομάδων των τελευταίων 5 χρόνων</strong>. Η διαφορά στο offensive rating είναι περίπου <strong>στους 11 πόντους με 3 κατοχές λιγότερες</strong>,
+                    γεγονός που δείχνει την αύξηση της αποτελεσματικότητας των ομάδων. Επίσης, ναι μεν οι ομάδες δεν "τρέχουν" τόσο το γήπεδο όσο τα πρώτα χρόνια, 
+                    αλλά η επίδοση τους στο να σκοράρουν με όλους τους τρόπους (βολές, δίποντα, τρίποντα) <strong>αυξήθηκε κατά 2.5% περίπου</strong>. Θα δούμε και παρακάτω μία πιο εκτενή ανάλυση.
                 </p>
 
 

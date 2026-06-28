@@ -1280,6 +1280,11 @@ footer {
     border: 1px solid #f5c2c7;
 }
 
+.badge-mid-custom {
+    background-color: #fff3cd;
+    border: 1px solid #ffecb5;
+}
+
 /* Μικρός αριθμός (πλήθος ομάδων) δίπλα από το ποσοστό */
 .count-small {
     display: inline-block;

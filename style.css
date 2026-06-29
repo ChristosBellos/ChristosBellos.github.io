@@ -1347,3 +1347,19 @@ footer {
     -webkit-overflow-scrolling: touch; /* Ομαλό scroll σε iOS συσκευές */
     margin-bottom: 1rem;
 }
+
+/* Ρυθμίσεις Tableau για Κινητά */
+@media (max-width: 768px) {
+    .Tableau {
+        padding: 0.5rem !important; /* Μειώνει το εσωτερικό κενό για να απλωθεί το γράφημα */
+        border-radius: 8px;
+    }
+    
+    /* Αναγκάζει το embedded iframe του Tableau να μην δημιουργεί διπλό scrollbar */
+    .Tableau iframe, 
+    .Tableau object, 
+    .Tableau .tableauPlaceholder {
+        width: 100% !important;
+        min-height: 400px !important; /* Δίνει ένα σταθερό ύψος για να αναπνεύσει το line chart */
+    }
+}

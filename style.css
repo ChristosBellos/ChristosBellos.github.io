@@ -1363,3 +1363,33 @@ footer {
         min-height: 400px !important; /* Δίνει ένα σταθερό ύψος για να αναπνεύσει το line chart */
     }
 }
+
+/* ==========================================
+   Διαχωρισμός Tableau (Desktop vs Mobile)
+   ========================================== */
+
+/* 1. Ρυθμίσεις για Υπολογιστές (Default κατάσταση) */
+.tableau-mobile {
+    display: none !important; /* Κρύβει την εικόνα στα PC */
+}
+
+.tableau-desktop {
+    display: block; /* Εμφανίζει κανονικά το interactive Tableau embed */
+}
+
+/* 2. Ρυθμίσεις για Κινητά & Tablet (Οθόνες μικρότερες από 768px) */
+@media (max-width: 768px) {
+    .tableau-desktop {
+        display: none !important; /* Κρύβει το βαρύ embed κώδικα στο κινητό */
+    }
+    
+    .tableau-mobile {
+        display: block !important; /* Εμφανίζει τη στατική εικόνα */
+    }
+    
+    /* Extra βελτίωση: Μειώνουμε το padding του container στο κινητό 
+       για να κερδίσεις ακόμα περισσότερο οριζόντιο χώρο για το γράφημα */
+    .Tableau {
+        padding: 0.6rem !important; 
+    }
+}

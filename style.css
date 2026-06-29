@@ -1308,3 +1308,42 @@ footer {
     font-style:italic;
     color: var(--text-main);
 }
+
+/* Κινητά - Responsive για τους μεγάλους πίνακες advanced stats */
+@media (max-width: 768px) {
+    .custom-expanded-table {
+        table-layout: auto !important; /* Απελευθερώνει το σταθερό πλάτος */
+    }
+    
+    .custom-expanded-table thead th, 
+    .custom-expanded-table tbody td {
+        padding: 10px 8px !important; /* Μειώνει το padding για να χωράνε */
+        font-size: 0.85rem !important; /* Ελαφρώς μικρότερη γραμματοσειρά */
+        min-width: 90px; /* Αναγκάζει το κείμενο να μην διπλώνει περίεργα */
+    }
+
+    .custom-expanded-table tbody td.team-category-cell,
+    .custom-expanded-table thead th.text-start {
+        width: auto !important; /* Αφήνει την πρώτη στήλη να προσαρμοστεί */
+        min-width: 140px;
+    }
+    
+    .badge-stat {
+        padding: 4px 6px !important;
+        font-size: 0.8rem !important;
+        min-width: 65px !important;
+    }
+    
+    .count-small {
+        display: block; /* Βάζει το "Από τις Χ ομάδες" από κάτω για εξοικονόμηση χώρου */
+        margin-left: 0 !important;
+        font-size: 0.75rem;
+    }
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Επιτρέπει το scroll δεξιά-αριστερά στο κινητό */
+    -webkit-overflow-scrolling: touch; /* Ομαλό scroll σε iOS συσκευές */
+    margin-bottom: 1rem;
+}
